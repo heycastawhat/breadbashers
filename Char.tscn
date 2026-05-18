@@ -27,3 +27,6 @@ shape = SubResource("CapsuleShape3D_v28aq")
 transform = Transform3D(1, 0, 0, 0, 0.9548075, 0.2972249, 0, -0.2972249, 0.9548075, 0, 1.2864532, 1.4788783)
 current = true
 fov = 61.200672
+
+[node name="HeldItemAnchor" type="Node3D" parent="CameraPivot" unique_id=398812001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22, 0.45, -0.9)

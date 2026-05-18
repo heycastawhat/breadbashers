@@ -1,6 +1,10 @@
 [gd_scene format=4 uid="uid://coeba6vvi2tw"]
 
 [ext_resource type="PackedScene" uid="uid://dgyu7dtynlv48" path="res://takesomething.glb" id="1_7rjth"]
+[ext_resource type="Script" uid="uid://b0jio315d524q" path="res://spin.gd" id="2_redhu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_pickup"]
+radius = 2.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_redhu"]
 load_path = "res://.godot/imported/takesomething_Group 1 (1).png-791e8e8e67a94a09838e692ec2eb00d5.s3tc.ctex"
@@ -46,6 +50,17 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ksd0q")
 
 [node name="takesomething" unique_id=1376127316 instance=ExtResource("1_7rjth")]
+script = ExtResource("2_redhu")
 
-[node name="Cube" parent="." index="0" unique_id=377821163]
+[node name="SpinPivot" type="Node3D" parent="." index="0"]
+
+[node name="Cube" parent="SpinPivot" index="0" unique_id=377821163]
 mesh = SubResource("ArrayMesh_14ei0")
+
+[node name="PickupArea" type="Area3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" index="0"]
+shape = SubResource("SphereShape3D_pickup")
+
+[connection signal="body_entered" from="PickupArea" to="." method="_on_pickup_area_body_entered"]
+[connection signal="body_exited" from="PickupArea" to="." method="_on_pickup_area_body_exited"]

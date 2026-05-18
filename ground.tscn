@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c2kmggp5wm2g4" path="res://Char.tscn" id="1_yh8r4"]
 [ext_resource type="PackedScene" uid="uid://h0okd6il1e23" path="res://shelf.tscn" id="2_t7tip"]
+[ext_resource type="PackedScene" uid="uid://coeba6vvi2tw" path="res://Chocolate.tscn" id="3_tv015"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yh8r4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -40,7 +41,7 @@ transform = Transform3D(1, 0, 0, 0, 0.077319324, 0, 0, 0, 0.9999995, 0.22328568,
 shape = SubResource("BoxShape3D_yh8r4")
 
 [node name="Node3D" parent="Floor" unique_id=836268720 instance=ExtResource("1_yh8r4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.821047, 1.008276, 22.960535)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.612024, 1.008276, 22.960535)
 
 [node name="Shelfs" type="Node3D" parent="." unique_id=233460621]
 
@@ -624,3 +625,6 @@ light_size = 1.0
 shadow_enabled = true
 spot_range = 18.789873
 spot_angle = 71.096146
+
+[node name="takesomething" parent="." unique_id=1376127316 instance=ExtResource("3_tv015")]
+transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495, 0, 0.03154773, -1.1772478, 0.49337375, 7.805162)
