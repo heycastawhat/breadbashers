@@ -49,18 +49,26 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ksd0q")
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_redhu"]
+data = PackedVector3Array(-8.342199, 0.0050999997, -0.0050999997, -8.342199, 1, -1, -8.342199, -0.7382, -0.7382, -8.342199, 0.0050999997, -0.0050999997, -8.342199, 0.7794, 0.7795, -8.342199, 1, -1, -8.342199, -0.7382, -0.7382, 1, 1, -1, 1, -0.7382, -0.7382, -8.342199, -0.7382, -0.7382, -8.342199, 1, -1, 1, 1, -1, 1, -0.7382, -0.7382, 1, 1, -1, 1, 0.0050999997, -0.0050999997, 1, 0.0050999997, -0.0050999997, 1, 1, -1, 1, 0.7794, 0.7795, 1, 0.0050999997, -0.0050999997, -8.342199, 0.7794, 0.7795, -8.342199, 0.0050999997, -0.0050999997, 1, 0.0050999997, -0.0050999997, 1, 0.7794, 0.7795, -8.342199, 0.7794, 0.7795, -8.342199, -0.7382, -0.7382, 1, 0.0050999997, -0.0050999997, -8.342199, 0.0050999997, -0.0050999997, -8.342199, -0.7382, -0.7382, 1, -0.7382, -0.7382, 1, 0.0050999997, -0.0050999997, 1, 1, -1, -8.342199, 0.7794, 0.7795, -8.342199, 1, -1, 1, 1, -1, 1, 0.7794, 0.7795, -8.342199, 0.7794, 0.7795)
+
 [node name="takesomething" unique_id=1376127316 instance=ExtResource("1_7rjth")]
 script = ExtResource("2_redhu")
 
-[node name="SpinPivot" type="Node3D" parent="." index="0"]
+[node name="SpinPivot" type="Node3D" parent="." index="0" unique_id=1101766298]
 
-[node name="Cube" parent="SpinPivot" index="0" unique_id=377821163]
+[node name="PickupArea" type="Area3D" parent="." index="1" unique_id=1442066848]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" index="0" unique_id=1658108571]
+shape = SubResource("SphereShape3D_pickup")
+
+[node name="Cube" parent="." index="2" unique_id=377821163]
 mesh = SubResource("ArrayMesh_14ei0")
 
-[node name="PickupArea" type="Area3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0" unique_id=737788573]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" index="0"]
-shape = SubResource("SphereShape3D_pickup")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=490489081]
+shape = SubResource("ConcavePolygonShape3D_redhu")
 
 [connection signal="body_entered" from="PickupArea" to="." method="_on_pickup_area_body_entered"]
 [connection signal="body_exited" from="PickupArea" to="." method="_on_pickup_area_body_exited"]

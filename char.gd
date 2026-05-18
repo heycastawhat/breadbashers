@@ -13,7 +13,7 @@ const CHOCOLATE_SCENE := preload("res://Chocolate.tscn")
 @export var max_pitch_degrees := 80.0
 
 @onready var pivot: Node3D = $CameraPivot
-@onready var held_item_anchor: Node3D = $CameraPivot/HeldItemAnchor
+@onready var held_item_anchor: Node3D = $HeldItemAnchor
 
 var inventory: Dictionary[StringName, int] = {}
 var held_item: Node3D = null
@@ -141,14 +141,15 @@ func get_item_count(item_id: StringName) -> int:
 
 func _spawn_held_chocolate() -> void:
 	held_item = CHOCOLATE_SCENE.instantiate()
-	held_item.position = Vector3.ZERO
-	held_item.rotation_degrees = Vector3(10.0, 20.0, 0.0)
-	held_item.scale = Vector3.ONE * 0.18
 	held_item.set("top_level", false)
 	held_item_anchor.add_child(held_item)
 
 	if held_item.has_method("set_held_mode"):
 		held_item.set_held_mode(true)
+
+	held_item.position = Vector3(0.0, -0.6, 0.0)
+	held_item.rotation_degrees = Vector3.ZERO
+	held_item.scale = Vector3.ONE * 0.12
 
 
 func _drop_held_item() -> void:
@@ -163,9 +164,11 @@ func _drop_held_item() -> void:
 	get_tree().current_scene.add_child(held_item)
 	held_item.global_position = global_position + (-global_transform.basis.z * 1.5) + Vector3.UP * 0.5
 	held_item.rotation = Vector3.ZERO
-	held_item.scale = Vector3.ONE
+	held_item.scale = Vector3.ONE * 0.12
 
-	if held_item.has_method("set_held_mode"):
+	if held_item.has_method("begin_drop"):
+		held_item.begin_drop()
+	elif held_item.has_method("set_held_mode"):
 		held_item.set_held_mode(false)
 
 	held_item = null
