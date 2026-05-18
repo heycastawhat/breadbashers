@@ -60,9 +60,10 @@ script = ExtResource("2_redhu")
 [node name="PickupArea" type="Area3D" parent="." index="1" unique_id=1442066848]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" index="0" unique_id=1658108571]
+transform = Transform3D(3.385839, 0, 0, 0, 1.3161964, 0, 0, 0, 1.2337419, 0, 1.8939062, 0)
 shape = SubResource("SphereShape3D_pickup")
 
-[node name="Cube" parent="." index="2" unique_id=183909939]
+[node name="Cube" parent="." index="2" unique_id=377821163]
 transform = Transform3D(1, 0, 0, 0, 0.7071068, -0.7071067, 0, 0.7071067, 0.7071068, 3.9142938, 1.0486022, 0)
 mesh = SubResource("ArrayMesh_14ei0")
 
