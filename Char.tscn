@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c2kmggp5wm2g4"]
+
+[ext_resource type="Script" uid="uid://cip76m0tw2k4a" path="res://char.gd" id="1_8q27n"]
+[ext_resource type="Texture2D" uid="uid://778bym4w6qgf" path="res://icon.svg" id="1_20esp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8q27n"]
+albedo_texture = ExtResource("1_20esp")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hm46b"]
+material = SubResource("StandardMaterial3D_8q27n")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v28aq"]
+
+[node name="Node3D" type="CharacterBody3D" unique_id=1441975456]
+script = ExtResource("1_8q27n")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=898211552]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_hm46b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1432232411]
+shape = SubResource("CapsuleShape3D_v28aq")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1194750240]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1780882605]
+transform = Transform3D(1, 0, 0, 0, 0.9548075, 0.2972249, 0, -0.2972249, 0.9548075, 0, 1.2864532, 1.4788783)
+current = true
+fov = 61.200672

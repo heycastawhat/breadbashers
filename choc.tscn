@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dsgitjctskyah"]
+
+[ext_resource type="PackedScene" uid="uid://dgyu7dtynlv48" path="res://takesomething.glb" id="1_77rm6"]
+
+[node name="Node3D" type="Node3D" unique_id=1727214195]
+
+[node name="takesomething" parent="." unique_id=1296316619 instance=ExtResource("1_77rm6")]

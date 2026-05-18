@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://h0okd6il1e23"]
+
+[ext_resource type="ArrayMesh" uid="uid://sxfpg44n7gwn" path="res://shelf.obj" id="1_0edba"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0edba"]
+size = Vector3(1.0897217, 3.8513184, 4.514099)
+
+[node name="Node3D" type="Node3D" unique_id=183398275]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1857280078]
+
+[node name="Shelf" type="MeshInstance3D" parent="StaticBody3D" unique_id=571095686]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0.000109136105, 0, 0.0024320483)
+mesh = ExtResource("1_0edba")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1692402228]
+transform = Transform3D(2.7267833, 0, 0, 0, 0.808, 0, 0, 0, 0.36252603, -0.00016642734, 1.3955557, 0.08130506)
+shape = SubResource("BoxShape3D_0edba")
