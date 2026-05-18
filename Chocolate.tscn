@@ -62,7 +62,8 @@ script = ExtResource("2_redhu")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" index="0" unique_id=1658108571]
 shape = SubResource("SphereShape3D_pickup")
 
-[node name="Cube" parent="." index="2" unique_id=377821163]
+[node name="Cube" parent="." index="2" unique_id=183909939]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, -0.7071067, 0, 0.7071067, 0.7071068, 3.9142938, 1.0486022, 0)
 mesh = SubResource("ArrayMesh_14ei0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0" unique_id=737788573]
