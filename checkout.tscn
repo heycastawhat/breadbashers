@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://d2a6bsq8sxeyk"]
+
+[ext_resource type="PackedScene" uid="uid://bdpvgj4jyd1eo" path="res://shelfs (1).glb" id="1_ne2dc"]
+
+[node name="Tinkercad GLTF Scene" unique_id=638651906 instance=ExtResource("1_ne2dc")]
