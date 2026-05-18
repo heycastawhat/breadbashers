@@ -1,0 +1,51 @@
+[gd_scene format=4 uid="uid://coeba6vvi2tw"]
+
+[ext_resource type="PackedScene" uid="uid://dgyu7dtynlv48" path="res://takesomething.glb" id="1_7rjth"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_redhu"]
+load_path = "res://.godot/imported/takesomething_Group 1 (1).png-791e8e8e67a94a09838e692ec2eb00d5.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lc7d"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = SubResource("CompressedTexture2D_redhu")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ksd0q"]
+_surfaces = [{
+"aabb": AABB(-8.342226, -0.7382425, -1, 9.342226, 1.7382425, 1.7794521),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("BgACAAAABgABAAIAAAACAAQABAABAAIAAAAHAAYABwABAAYAAAAEAAMAAAADAAcAAwAEAAcABAAFAAEABwAFAAEABwAEAAUA"),
+"lods": [0.042045765, PackedByteArray("AAABAAIAAwABAAAAAAACAAQAAAAEAAMABAABAAIAAwAFAAEABAAFAAEAAwAEAAUA")],
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAKglAAAAAIPf//8AAAAA//8AAAAA//8AAKglAAD/////AAAAAP//g9///wAAAAB5bSCPAAD//3ltII8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_14ei0"]
+resource_name = "takesomething_Cube_001"
+_surfaces = [{
+"aabb": AABB(-8.342226, -0.7382425, -1, 9.342226, 1.7382425, 1.7794521),
+"attribute_data": PackedByteArray("Gv0Duo/9O9L//wO6N/ss/2uTHtXBk///ZfsL1b6SwqqMjPexEIBLwJH7MdRSk62rWJOQ1Kn7Tquk+7h/AZMNq5KS5X/v+uCqMv28xbqS3tKQ+62/V5MMwJD7rb9XkwzA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("EgACAAAAEgABAAIAAwAEAAUAAwAGAAQABwAIABMAEwAIAAkAFAALABUAFAANAAsADAAWABcADAAKABYADgAPABAADgARAA8A"),
+"lods": [0.042045765, PackedByteArray("AAABAAIAAwAEAAUAAwAGAAQABwAIAAkACgALAAwACgANAAsADgAPABAADgARAA8A")],
+"material": SubResource("StandardMaterial3D_6lc7d"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.7983987, 1.8816695, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAKglFi4AAIPf//8WLgAA//8AABYuAAAAAKglBwD/////AAAhAP//AACoJSUAAAD//wAAAwD//wAAqCUTMP////8AACkb//+D3///gwT//wAAqCW3HwAAg9///0MgAAAAAKgltx///4Pf//9DIP////8AAPm6AACD3///+boAAP//AAD5uv//g9////m6AAB5bSCPFi7//3ltII/BG///eW0gj0MgAAB5bSCPQyD//3ltII+3HwAAeW0gj7cfCC97KAgveygIL3soAIDpiAOA6YgDgOmIAIDpiOlY07E+TX2aakLVhN3/0H/b/81/3f/Qf9v/zX/j/wyA4/8MgOP/DIDj/wyACC97KIZNDZvb/81/2//Nf93/0H/d/9B/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ksd0q")
+
+[node name="takesomething" unique_id=1376127316 instance=ExtResource("1_7rjth")]
+
+[node name="Cube" parent="." index="0" unique_id=377821163]
+mesh = SubResource("ArrayMesh_14ei0")
