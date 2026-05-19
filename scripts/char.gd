@@ -17,13 +17,14 @@ const CHOCOLATE_SCENE := preload("res://scenes/Chocolate.tscn")
 @export var goose_pitch_degrees := 3.0
 @export var goose_yaw_degrees := 2.0
 @export var goose_idle_breath_height := 0.01
+@export var held_item_world_scale := 0.12
 
 @onready var pivot: Node3D = $CameraPivot
-@onready var held_item_anchor: Node3D = $HeldItemAnchor
 @onready var goose_visual: Node3D = $goose
 
 var inventory: Dictionary[StringName, int] = {}
 var held_item: Node3D = null
+var held_item_anchor: Node3D = null
 var _pitch := 0.0
 var _jump_was_pressed := false
 var _drop_was_pressed := false
@@ -39,6 +40,7 @@ var _goose_jump_animation := StringName()
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	_pitch = pivot.rotation.x
+	held_item_anchor = _get_or_create_held_item_anchor()
 	_goose_base_position = goose_visual.position
 	_goose_base_rotation = goose_visual.rotation
 	_setup_goose_animation()
@@ -157,6 +159,34 @@ func get_item_count(item_id: StringName) -> int:
 	return inventory.get(item_id, 0)
 
 
+func _get_or_create_held_item_anchor() -> Node3D:
+	var anchor := goose_visual.get_node_or_null("HeldItemAnchor") as Node3D
+	if anchor != null:
+		return anchor
+
+	anchor = get_node_or_null("HeldItemAnchor") as Node3D
+	if anchor != null:
+		var saved_global_transform := anchor.global_transform
+		remove_child(anchor)
+		goose_visual.add_child(anchor)
+		anchor.global_transform = saved_global_transform
+		return anchor
+
+	anchor = Node3D.new()
+	anchor.name = "HeldItemAnchor"
+	goose_visual.add_child(anchor)
+	anchor.position = Vector3(0.0868386, 3.15, -1.55)
+	return anchor
+
+
+func _get_held_item_local_scale() -> float:
+	var anchor_scale := held_item_anchor.global_transform.basis.get_scale()
+	var parent_scale := (anchor_scale.x + anchor_scale.y + anchor_scale.z) / 3.0
+	if is_zero_approx(parent_scale):
+		return held_item_world_scale
+	return held_item_world_scale / parent_scale
+
+
 func _animate_goose(delta: float, horizontal_speed: float, airborne: bool) -> void:
 	var speed_floor := maxf(sprint_speed, 0.001)
 	var move_amount := clampf(horizontal_speed / speed_floor, 0.0, 1.0)
@@ -240,6 +270,9 @@ func _update_goose_rig_animation(move_amount: float, airborne: bool) -> void:
 
 
 func _spawn_held_chocolate() -> void:
+	if held_item_anchor == null:
+		held_item_anchor = _get_or_create_held_item_anchor()
+
 	held_item = CHOCOLATE_SCENE.instantiate()
 	held_item.set("top_level", false)
 	held_item_anchor.add_child(held_item)
@@ -249,7 +282,7 @@ func _spawn_held_chocolate() -> void:
 
 	held_item.position = Vector3.ZERO
 	held_item.rotation_degrees = Vector3.ZERO
-	held_item.scale = Vector3.ONE * 0.12
+	held_item.scale = Vector3.ONE * _get_held_item_local_scale()
 
 
 func _drop_held_item() -> void:
@@ -264,7 +297,7 @@ func _drop_held_item() -> void:
 	get_tree().current_scene.add_child(held_item)
 	held_item.global_position = global_position + (-global_transform.basis.z * 1.5) + Vector3.UP * 0.5
 	held_item.rotation = Vector3.ZERO
-	held_item.scale = Vector3.ONE * 0.12
+	held_item.scale = Vector3.ONE * held_item_world_scale
 
 	if held_item.has_method("begin_drop"):
 		held_item.begin_drop()

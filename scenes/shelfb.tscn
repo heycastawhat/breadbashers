@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b8hjnghamxvd7"]
+
+[ext_resource type="PackedScene" uid="uid://cesmqheiov7gk" path="res://rawmodels/shelfs.glb" id="1_wvfsa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_shelfb"]
+size = Vector3(0.6, 0.495, 0.45)
+
+[node name="Tinkercad GLTF Scene" unique_id=609898395 instance=ExtResource("1_wvfsa")]
+
+[node name="Node" parent="." index="0" unique_id=330403560]
+transform = Transform3D(15, 0, 0, 0, -6.556708e-07, 15, 0, -15, -6.556708e-07, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1008600279]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=976105513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0.2475, -0.225)
+shape = SubResource("BoxShape3D_shelfb")

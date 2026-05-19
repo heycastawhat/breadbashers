@@ -21,6 +21,7 @@ var _interact_was_pressed := false
 var _held_mode := false
 var _falling := false
 var _fall_velocity := 0.0
+var _combined := false
 
 
 func _ready() -> void:
@@ -52,11 +53,11 @@ func _process(delta: float) -> void:
 	_interact_was_pressed = interact_pressed
 
 
-func _on_pickup_area_body_entered(body: Node3D) -> void:
+func _on_pickup_area_body_entered(_body: Node3D) -> void:
 	pass
 
 
-func _on_pickup_area_body_exited(body: Node3D) -> void:
+func _on_pickup_area_body_exited(_body: Node3D) -> void:
 	pass
 
 
@@ -69,8 +70,9 @@ func _interact_pressed() -> bool:
 func set_held_mode(value: bool) -> void:
 	_held_mode = value
 	_interact_was_pressed = false
-	pickup_area.monitoring = not value
-	pickup_area.monitorable = not value
+	if pickup_area != null:
+		pickup_area.monitoring = not value
+		pickup_area.monitorable = not value
 	_set_world_collision(not value)
 
 	if value:
@@ -86,6 +88,14 @@ func begin_drop() -> void:
 	set_held_mode(false)
 	_falling = true
 	_fall_velocity = 0.0
+
+
+func can_combine() -> bool:
+	return not _held_mode and not _falling and not _combined and is_inside_tree()
+
+
+func mark_combined() -> void:
+	_combined = true
 
 
 func _is_player_close(player: Node3D) -> bool:
@@ -111,4 +121,5 @@ func _apply_drop_gravity(delta: float) -> void:
 
 
 func _set_world_collision(enabled: bool) -> void:
-	collision_shape.disabled = not enabled
+	if collision_shape != null:
+		collision_shape.disabled = not enabled

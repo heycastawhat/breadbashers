@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://c2kmggp5wm2g4" path="res://scenes/Char.tscn" id="1_yh8r4"]
 [ext_resource type="PackedScene" uid="uid://h0okd6il1e23" path="res://scenes/shelf.tscn" id="2_t7tip"]
 [ext_resource type="PackedScene" uid="uid://coeba6vvi2tw" path="res://scenes/Chocolate.tscn" id="3_tv015"]
+[ext_resource type="PackedScene" uid="uid://d2a6bsq8sxeyk" path="res://scenes/checkout.tscn" id="4_1ywih"]
+[ext_resource type="PackedScene" uid="uid://b8hjnghamxvd7" path="res://scenes/shelfb.tscn" id="5_ct7o8"]
+[ext_resource type="Script" path="res://scripts/combine_area.gd" id="6_od37v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yh8r4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,6 +18,8 @@ sky_material = SubResource("ProceduralSkyMaterial_yh8r4")
 background_mode = 2
 sky = SubResource("Sky_t7tip")
 tonemap_mode = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ywih"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv0v5"]
 albedo_color = Color(0.28155392, 0.28155392, 0.26904383, 1)
@@ -29,6 +34,13 @@ size = Vector3(76.98045, 1, 54.020905)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=83100187]
 environment = SubResource("Environment_tv015")
+
+[node name="CombineArea" type="Area3D" parent="." unique_id=1910898228]
+script = ExtResource("6_od37v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea"]
+transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 4.9864025, 0, -15.617737)
+shape = SubResource("BoxShape3D_1ywih")
 
 [node name="Floor" type="StaticBody3D" parent="." unique_id=578449385]
 
@@ -267,17 +279,8 @@ shadow_enabled = true
 spot_range = 18.789873
 spot_angle = 71.096146
 
-[node name="DirectionalLight3D63" type="SpotLight3D" parent="Light" unique_id=1438328689]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 20.191418, 6.6913366, 20.290379)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 71.096146
-
 [node name="DirectionalLight3D64" type="SpotLight3D" parent="Light" unique_id=1261253071]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 33.834236, 6.6913366, 20.290379)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 19.881142, 6.6913366, 20.290379)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
 light_size = 1.0
@@ -295,7 +298,7 @@ spot_range = 18.789873
 spot_angle = 71.096146
 
 [node name="DirectionalLight3D70" type="SpotLight3D" parent="Light" unique_id=1536127388]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 33.834236, 6.6913366, 4.796139)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 19.881142, 6.6913366, 4.796139)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
 light_size = 1.0
@@ -339,17 +342,8 @@ shadow_enabled = true
 spot_range = 18.789873
 spot_angle = 71.096146
 
-[node name="DirectionalLight3D75" type="SpotLight3D" parent="Light" unique_id=1108060325]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 20.191418, 6.6913366, -1.8753052)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 71.096146
-
 [node name="DirectionalLight3D76" type="SpotLight3D" parent="Light" unique_id=663543057]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 33.834236, 6.6913366, -10.535084)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 19.881142, 6.6913366, -10.535084)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
 light_size = 1.0
@@ -393,17 +387,8 @@ shadow_enabled = true
 spot_range = 18.789873
 spot_angle = 71.096146
 
-[node name="DirectionalLight3D81" type="SpotLight3D" parent="Light" unique_id=5030889]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 20.191418, 6.6913366, -22.840883)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 71.096146
-
 [node name="DirectionalLight3D82" type="SpotLight3D" parent="Light" unique_id=251198068]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 33.834236, 6.6913366, -22.840883)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 19.881142, 6.6913366, -22.840883)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
 light_size = 1.0
@@ -412,4 +397,19 @@ spot_range = 18.789873
 spot_angle = 71.096146
 
 [node name="takesomething" parent="." unique_id=1376127316 instance=ExtResource("3_tv015")]
-transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495, 0, 0.03154773, -37.14521, 0.3360747, -18.463707)
+transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495, 0, 0.03154773, -37.347427, 0.3360747, -18.463707)
+
+[node name="takesomething2" parent="." unique_id=1879361439 instance=ExtResource("3_tv015")]
+transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495, 0, 0.03154773, -37.400005, 0.3360747, -15.21467)
+
+[node name="Tinkercad GLTF Scene" parent="." unique_id=638651906 instance=ExtResource("4_1ywih")]
+transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06, 5.1453886, 4.7683716e-07, 18.739311)
+
+[node name="Tinkercad GLTF Scene2" parent="." unique_id=1875486604 instance=ExtResource("4_1ywih")]
+transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06, -1.2120543, 4.7683716e-07, 18.739311)
+
+[node name="Tinkercad GLTF Scene3" parent="." unique_id=609898395 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(5, 0, 8.742278e-07, 0, 5, 0, -8.742278e-07, 0, 5, 3.878666, 1.9670123e-08, 5.2875843)
+
+[node name="Tinkercad GLTF Scene4" parent="." unique_id=1323307074 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(5, 0, 8.742278e-07, 0, 5, 0, -8.742278e-07, 0, 5, 9.908564, 1.9670123e-08, 5.2875843)
