@@ -8,12 +8,17 @@ extends Node3D
 @export var bob_speed := 1.0
 @export var drop_gravity := 12.0
 @export var floor_offset := 0.08
+@export var floor_hit_particles := true
+@export var visual_path: NodePath = ^"Cube"
+@export var pickup_area_path: NodePath = ^"PickupArea"
+@export var collision_body_path: NodePath = ^"Cube/StaticBody3D"
+@export var collision_shape_path: NodePath = ^"Cube/StaticBody3D/CollisionShape3D"
 
-@onready var pivot: Node3D = $SpinPivot
-@onready var visual: Node3D = $Cube
-@onready var pickup_area: Area3D = $PickupArea
-@onready var collision_body: StaticBody3D = $Cube/StaticBody3D
-@onready var collision_shape: CollisionShape3D = $Cube/StaticBody3D/CollisionShape3D
+@onready var pivot: Node3D = get_node_or_null(^"SpinPivot") as Node3D
+@onready var visual: Node3D = _get_visual_node()
+@onready var pickup_area: Area3D = get_node_or_null(pickup_area_path) as Area3D
+@onready var collision_body: StaticBody3D = get_node_or_null(collision_body_path) as StaticBody3D
+@onready var collision_shape: CollisionShape3D = get_node_or_null(collision_shape_path) as CollisionShape3D
 
 var _start_y := 0.0
 var _time := 0.0
@@ -34,7 +39,8 @@ func _process(delta: float) -> void:
 		return
 
 	_time += delta
-	visual.rotate_y(deg_to_rad(spin_speed) * delta)
+	if visual != null:
+		visual.rotate_y(deg_to_rad(spin_speed) * delta)
 
 	if _falling:
 		_apply_drop_gravity(delta)
@@ -46,6 +52,7 @@ func _process(delta: float) -> void:
 	var player := get_tree().get_first_node_in_group("player")
 	if player and _is_player_close(player) and interact_pressed and not _interact_was_pressed:
 		if player.has_method("add_item"):
+			_combined = true
 			player.add_item(item_id, 1)
 			queue_free()
 			return
@@ -78,8 +85,10 @@ func set_held_mode(value: bool) -> void:
 	if value:
 		position = Vector3.ZERO
 		rotation = Vector3.ZERO
-		pivot.rotation = Vector3.ZERO
-		visual.rotation = Vector3.ZERO
+		if pivot != null:
+			pivot.rotation = Vector3.ZERO
+		if visual != null:
+			visual.rotation = Vector3.ZERO
 	else:
 		_start_y = position.y
 
@@ -108,13 +117,16 @@ func _apply_drop_gravity(delta: float) -> void:
 	var to := from + Vector3.DOWN * _fall_velocity * delta
 
 	var query := PhysicsRayQueryParameters3D.create(from, to + Vector3.DOWN * floor_offset)
-	query.exclude = [collision_body.get_rid()]
+	if collision_body != null:
+		query.exclude = [collision_body.get_rid()]
 	var hit := get_world_3d().direct_space_state.intersect_ray(query)
 
 	if hit:
 		global_position = hit["position"] + Vector3.UP * floor_offset
 		_start_y = position.y
 		_falling = false
+		if floor_hit_particles:
+			_spawn_particle_burst(hit["position"], Color(0.95, 0.82, 0.45, 1.0))
 		return
 
 	global_position = to
@@ -123,3 +135,32 @@ func _apply_drop_gravity(delta: float) -> void:
 func _set_world_collision(enabled: bool) -> void:
 	if collision_shape != null:
 		collision_shape.disabled = not enabled
+
+
+func _get_visual_node() -> Node3D:
+	var configured_visual := get_node_or_null(visual_path) as Node3D
+	if configured_visual != null:
+		return configured_visual
+	return self
+
+
+func _spawn_particle_burst(burst_position: Vector3, color: Color) -> void:
+	var particles := CPUParticles3D.new()
+	particles.amount = 18
+	particles.lifetime = 0.35
+	particles.one_shot = true
+	particles.explosiveness = 0.9
+	particles.emission_shape = CPUParticles3D.EMISSION_SHAPE_SPHERE
+	particles.emission_sphere_radius = 0.08
+	particles.direction = Vector3.UP
+	particles.spread = 55.0
+	particles.initial_velocity_min = 1.0
+	particles.initial_velocity_max = 3.0
+	particles.gravity = Vector3(0.0, -6.0, 0.0)
+	particles.scale_amount_min = 0.035
+	particles.scale_amount_max = 0.09
+	particles.color = color
+	get_tree().current_scene.add_child(particles)
+	particles.global_position = burst_position
+	particles.emitting = true
+	particles.finished.connect(particles.queue_free)

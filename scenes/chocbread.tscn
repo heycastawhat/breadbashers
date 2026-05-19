@@ -1,0 +1,68 @@
+[gd_scene format=4 uid="uid://d0138jvvipmo6"]
+
+[ext_resource type="PackedScene" uid="uid://sjvrp6k4m3wr" path="res://rawmodels/takesomething.glb" id="1_i0yox"]
+[ext_resource type="Script" uid="uid://b0jio315d524q" path="res://scripts/spin.gd" id="2_7seep"]
+[ext_resource type="Texture2D" uid="uid://c8wb1j83fe1xc" path="res://textures/takesomething_Group 1 (1).png" id="3_s8yl8"]
+[ext_resource type="PackedScene" uid="uid://dcbtg6o6txw32" path="res://rawmodels/bread.glb" id="4_7seep"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lc7d"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("3_s8yl8")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ksd0q"]
+_surfaces = [{
+"aabb": AABB(-8.342226, -0.7382425, -1, 9.342226, 1.7382425, 1.7794521),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("BgACAAAABgABAAIAAAACAAQABAABAAIAAAAHAAYABwABAAYAAAAEAAMAAAADAAcAAwAEAAcABAAFAAEABwAFAAEABwAEAAUA"),
+"lods": [0.042045765, PackedByteArray("AAABAAIAAwABAAAAAAACAAQAAAAEAAMABAABAAIAAwAFAAEABAAFAAEAAwAEAAUA")],
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAKglAAAAAIPf//8AAAAA//8AAAAA//8AAKglAAD/////AAAAAP//g9///wAAAAB5bSCPAAD//3ltII8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_14ei0"]
+resource_name = "takesomething_Cube_001"
+_surfaces = [{
+"aabb": AABB(-8.342226, -0.7382425, -1, 9.342226, 1.7382425, 1.7794521),
+"attribute_data": PackedByteArray("Gv0Duo/9O9L//wO6N/ss/2uTHtXBk///ZfsL1b6SwqqMjPexEIBLwJH7MdRSk62rWJOQ1Kn7Tquk+7h/AZMNq5KS5X/v+uCqMv28xbqS3tKQ+62/V5MMwJD7rb9XkwzA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("EgACAAAAEgABAAIAAwAEAAUAAwAGAAQABwAIABMAEwAIAAkAFAALABUAFAANAAsADAAWABcADAAKABYADgAPABAADgARAA8A"),
+"lods": [0.042045765, PackedByteArray("AAABAAIAAwAEAAUAAwAGAAQABwAIAAkACgALAAwACgANAAsADgAPABAADgARAA8A")],
+"material": SubResource("StandardMaterial3D_6lc7d"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.7983987, 1.8816695, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAKglFi4AAIPf//8WLgAA//8AABYuAAAAAKglBwD/////AAAhAP//AACoJSUAAAD//wAAAwD//wAAqCUTMP////8AACkb//+D3///gwT//wAAqCW3HwAAg9///0MgAAAAAKgltx///4Pf//9DIP////8AAPm6AACD3///+boAAP//AAD5uv//g9////m6AAB5bSCPFi7//3ltII/BG///eW0gj0MgAAB5bSCPQyD//3ltII+3HwAAeW0gj7cfCC97KAgveygIL3soAIDpiAOA6YgDgOmIAIDpiOlY07E+TX2aakLVhN3/0H/b/81/3f/Qf9v/zX/j/wyA4/8MgOP/DIDj/wyACC97KIZNDZvb/81/2//Nf93/0H/d/9B/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ksd0q")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_redhu"]
+data = PackedVector3Array(-8.342199, 0.0050999997, -0.0050999997, -8.342199, 1, -1, -8.342199, -0.7382, -0.7382, -8.342199, 0.0050999997, -0.0050999997, -8.342199, 0.7794, 0.7795, -8.342199, 1, -1, -8.342199, -0.7382, -0.7382, 1, 1, -1, 1, -0.7382, -0.7382, -8.342199, -0.7382, -0.7382, -8.342199, 1, -1, 1, 1, -1, 1, -0.7382, -0.7382, 1, 1, -1, 1, 0.0050999997, -0.0050999997, 1, 0.0050999997, -0.0050999997, 1, 1, -1, 1, 0.7794, 0.7795, 1, 0.0050999997, -0.0050999997, -8.342199, 0.7794, 0.7795, -8.342199, 0.0050999997, -0.0050999997, 1, 0.0050999997, -0.0050999997, 1, 0.7794, 0.7795, -8.342199, 0.7794, 0.7795, -8.342199, -0.7382, -0.7382, 1, 0.0050999997, -0.0050999997, -8.342199, 0.0050999997, -0.0050999997, -8.342199, -0.7382, -0.7382, 1, -0.7382, -0.7382, 1, 0.0050999997, -0.0050999997, 1, 1, -1, -8.342199, 0.7794, 0.7795, -8.342199, 1, -1, 1, 1, -1, 1, 0.7794, 0.7795, -8.342199, 0.7794, 0.7795)
+
+[node name="takesomething" unique_id=1376127316 instance=ExtResource("1_i0yox")]
+script = ExtResource("2_7seep")
+item_id = &"chocbread"
+spin_speed = 25.0
+visual_path = NodePath("")
+pickup_area_path = NodePath("")
+
+[node name="Cube" parent="." index="0" unique_id=1615258065]
+transform = Transform3D(-7.3870035e-09, -0.098994955, 0.09899494, 0.14, -6.119594e-09, 4.327206e-09, 1.2674091e-09, 0.09899494, 0.098994955, -1.2923958, 0.35027632, 0.031885386)
+mesh = SubResource("ArrayMesh_14ei0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0" unique_id=737788573]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=490489081]
+shape = SubResource("ConcavePolygonShape3D_redhu")
+
+[node name="Sketchfab_Scene" parent="." index="1" unique_id=1627003701 instance=ExtResource("4_7seep")]
+transform = Transform3D(0.07, 0, 0, 0, -3.059797e-09, 0.07, 0, -0.07, -3.059797e-09, 0.6, 0, 0)

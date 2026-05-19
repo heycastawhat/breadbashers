@@ -5,7 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://coeba6vvi2tw" path="res://scenes/Chocolate.tscn" id="3_tv015"]
 [ext_resource type="PackedScene" uid="uid://d2a6bsq8sxeyk" path="res://scenes/checkout.tscn" id="4_1ywih"]
 [ext_resource type="PackedScene" uid="uid://b8hjnghamxvd7" path="res://scenes/shelfb.tscn" id="5_ct7o8"]
-[ext_resource type="Script" path="res://scripts/combine_area.gd" id="6_od37v"]
+[ext_resource type="Script" uid="uid://b42stnawvsuxr" path="res://scripts/combine_area.gd" id="6_od37v"]
+[ext_resource type="PackedScene" uid="uid://cbmw33eqrcpdl" path="res://scenes/bread1.tscn" id="7_vjnaj"]
+[ext_resource type="PackedScene" uid="uid://dnnr2lbs7y0f4" path="res://scenes/person.tscn" id="8_hokwi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yh8r4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -38,7 +40,7 @@ environment = SubResource("Environment_tv015")
 [node name="CombineArea" type="Area3D" parent="." unique_id=1910898228]
 script = ExtResource("6_od37v")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea" unique_id=729210365]
 transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 4.9864025, 0, -15.617737)
 shape = SubResource("BoxShape3D_1ywih")
 
@@ -413,3 +415,9 @@ transform = Transform3D(5, 0, 8.742278e-07, 0, 5, 0, -8.742278e-07, 0, 5, 3.8786
 
 [node name="Tinkercad GLTF Scene4" parent="." unique_id=1323307074 instance=ExtResource("5_ct7o8")]
 transform = Transform3D(5, 0, 8.742278e-07, 0, 5, 0, -8.742278e-07, 0, 5, 9.908564, 1.9670123e-08, 5.2875843)
+
+[node name="Sketchfab_Scene" parent="." unique_id=1627003701 instance=ExtResource("7_vjnaj")]
+transform = Transform3D(-0.004433065, 0, 0.99999017, 0, 1, 0, -0.99999017, 0, -0.004433065, -17.643833, 0.40800828, -8.314685)
+
+[node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1.3539476, 8)
