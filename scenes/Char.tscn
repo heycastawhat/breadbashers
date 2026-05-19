@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c2kmggp5wm2g4"]
+
+[ext_resource type="Script" uid="uid://cip76m0tw2k4a" path="res://scripts/char.gd" id="1_8q27n"]
+[ext_resource type="PackedScene" uid="uid://cqtcv0xh27esh" path="res://rawmodels/goose_rigged.glb" id="2_0hjuo"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_player"]
+radius = 0.35
+height = 1.3
+
+[node name="Node3D" type="CharacterBody3D" unique_id=1441975456]
+script = ExtResource("1_8q27n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1432232411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
+shape = SubResource("CapsuleShape3D_player")
+
+[node name="goose" parent="." unique_id=1855516839 instance=ExtResource("2_0hjuo")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.02605158, 0, 0)
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1194750240]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1780882605]
+transform = Transform3D(1, 0, 0, 0, 0.9548075, 0.2972249, 0, -0.2972249, 0.9548075, 0, 1.2864532, 1.4788783)
+current = true
+fov = 61.200672
+
+[node name="HeldItemAnchor" type="Node3D" parent="." unique_id=398812001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, -0.45)

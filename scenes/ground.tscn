@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://binurhp6dml18"]
 
-[ext_resource type="PackedScene" uid="uid://c2kmggp5wm2g4" path="res://Char.tscn" id="1_yh8r4"]
-[ext_resource type="PackedScene" uid="uid://h0okd6il1e23" path="res://shelf.tscn" id="2_t7tip"]
-[ext_resource type="PackedScene" uid="uid://coeba6vvi2tw" path="res://Chocolate.tscn" id="3_tv015"]
+[ext_resource type="PackedScene" uid="uid://c2kmggp5wm2g4" path="res://scenes/Char.tscn" id="1_yh8r4"]
+[ext_resource type="PackedScene" uid="uid://h0okd6il1e23" path="res://scenes/shelf.tscn" id="2_t7tip"]
+[ext_resource type="PackedScene" uid="uid://coeba6vvi2tw" path="res://scenes/Chocolate.tscn" id="3_tv015"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yh8r4"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -37,7 +37,7 @@ transform = Transform3D(27.307384, 0, 0, 0, 1, 0, 0, 0, 27.193146, -10.823524, 0
 mesh = SubResource("PlaneMesh_lv0v5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=55431656]
-transform = Transform3D(0.7157834, 0, 0, 0, 0.077319324, 0, 0, 0, 0.9999995, -10.662896, 0.17636395, -0.13869572)
+transform = Transform3D(0.7157834, 0, 0, 0, 0.077319324, 0, 0, 0, 0.9999995, -10.662896, -0.038659662, -0.13869572)
 shape = SubResource("BoxShape3D_yh8r4")
 
 [node name="Node3D" parent="Floor" unique_id=836268720 instance=ExtResource("1_yh8r4")]

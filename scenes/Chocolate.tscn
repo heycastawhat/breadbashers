@@ -1,18 +1,16 @@
 [gd_scene format=4 uid="uid://coeba6vvi2tw"]
 
-[ext_resource type="PackedScene" uid="uid://dgyu7dtynlv48" path="res://takesomething.glb" id="1_7rjth"]
-[ext_resource type="Script" uid="uid://b0jio315d524q" path="res://spin.gd" id="2_redhu"]
+[ext_resource type="PackedScene" uid="uid://sjvrp6k4m3wr" path="res://rawmodels/takesomething.glb" id="1_7rjth"]
+[ext_resource type="Script" uid="uid://b0jio315d524q" path="res://scripts/spin.gd" id="2_redhu"]
+[ext_resource type="Texture2D" uid="uid://c8wb1j83fe1xc" path="res://textures/takesomething_Group 1 (1).png" id="3_7rjth"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_pickup"]
 radius = 2.0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_redhu"]
-load_path = "res://.godot/imported/takesomething_Group 1 (1).png-791e8e8e67a94a09838e692ec2eb00d5.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lc7d"]
 resource_name = "Material.001"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_redhu")
+albedo_texture = ExtResource("3_7rjth")
 roughness = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ksd0q"]
@@ -60,7 +58,6 @@ script = ExtResource("2_redhu")
 [node name="PickupArea" type="Area3D" parent="." index="1" unique_id=1442066848]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PickupArea" index="0" unique_id=1658108571]
-transform = Transform3D(3.385839, 0, 0, 0, 1.3161964, 0, 0, 0, 1.2337419, 0, 1.8939062, 0)
 shape = SubResource("SphereShape3D_pickup")
 
 [node name="Cube" parent="." index="2" unique_id=377821163]

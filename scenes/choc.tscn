@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dsgitjctskyah"]
+
+[ext_resource type="PackedScene" uid="uid://sjvrp6k4m3wr" path="res://rawmodels/takesomething.glb" id="1_77rm6"]
+[ext_resource type="Script" uid="uid://b0jio315d524q" path="res://scripts/spin.gd" id="1_87wqm"]
+
+[node name="Node3D" type="Node3D" unique_id=1727214195]
+script = ExtResource("1_87wqm")
+
+[node name="takesomething" parent="." unique_id=1296316619 instance=ExtResource("1_77rm6")]

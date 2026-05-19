@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dgyu7dtynlv48"
-path="res://.godot/imported/takesomething.glb-e88004cc1dc22ba4ba46578e82d42b76.scn"
+uid="uid://sjvrp6k4m3wr"
+path="res://.godot/imported/takesomething.glb-6b90147f88a21114a9d240f3a4536222.scn"
 
 [deps]
 
-source_file="res://takesomething.glb"
-dest_files=["res://.godot/imported/takesomething.glb-e88004cc1dc22ba4ba46578e82d42b76.scn"]
+source_file="res://rawmodels/takesomething.glb"
+dest_files=["res://.godot/imported/takesomething.glb-6b90147f88a21114a9d240f3a4536222.scn"]
 
 [params]
 
