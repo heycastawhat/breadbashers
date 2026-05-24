@@ -11,7 +11,7 @@ height = 2.5850587
 script = ExtResource("2_person")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=346143706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.044091314, 0.011916757, -0.01875912)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.044091314, 1.2925293, -0.01875912)
 shape = SubResource("CapsuleShape3D_person")
 
 [node name="Sketchfab_Scene" parent="." unique_id=799719670 instance=ExtResource("1_model")]

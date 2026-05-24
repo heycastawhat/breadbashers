@@ -420,4 +420,4 @@ transform = Transform3D(5, 0, 8.742278e-07, 0, 5, 0, -8.742278e-07, 0, 5, 9.9085
 transform = Transform3D(-0.004433065, 0, 0.99999017, 0, 1, 0, -0.99999017, 0, -0.004433065, -17.643833, 0.40800828, -8.314685)
 
 [node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1.3539476, 8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.08, 8)
