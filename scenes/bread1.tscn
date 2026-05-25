@@ -10,5 +10,8 @@ pickup_distance = 3.0
 spin_speed = 25.0
 visual_path = NodePath("Sketchfab_model")
 
-[node name="Sketchfab_model" parent="." index="0" unique_id=1479978955]
+[node name="Sketchfab_model" parent="." index="0" unique_id=223826705]
 transform = Transform3D(0.07, 0, 0, 0, -3.059797e-09, 0.07, 0, -0.07, -3.059797e-09, 0, 0, 0)
+
+[node name="Object_3" parent="Sketchfab_model/baguettePain_obj_cleaner_materialmerger_gles" parent_id_path=PackedInt32Array(2090712942) index="1" unique_id=902300078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.9058347e-10, 0.0066471947)
