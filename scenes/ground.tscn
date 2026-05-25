@@ -22,6 +22,7 @@ sky = SubResource("Sky_t7tip")
 tonemap_mode = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1ywih"]
+size = Vector3(1.1411133, 1, 1.09375)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv0v5"]
 albedo_color = Color(0.28155392, 0.28155392, 0.26904383, 1)
@@ -41,13 +42,13 @@ environment = SubResource("Environment_tv015")
 script = ExtResource("6_od37v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea" unique_id=729210365]
-transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 4.9864025, 0, -15.617737)
+transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 6.1784678, 0, -16.409004)
 shape = SubResource("BoxShape3D_1ywih")
 
 [node name="Floor" type="StaticBody3D" parent="." unique_id=578449385]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=56183446]
-transform = Transform3D(27.307384, 0, 0, 0, 1, 0, 0, 0, 27.193146, -10.823524, 0, -0.0003156662)
+transform = Transform3D(27.307384, 0, 0, 0, 1, 0, 0, 0, 27.193146, -10.815556, -0.020217896, -0.013924599)
 mesh = SubResource("PlaneMesh_lv0v5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=55431656]
@@ -420,4 +421,4 @@ transform = Transform3D(5, 0, 8.742278e-07, 0, 5, 0, -8.742278e-07, 0, 5, 9.9085
 transform = Transform3D(-0.004433065, 0, 0.99999017, 0, 1, 0, -0.99999017, 0, -0.004433065, -17.643833, 0.40800828, -8.314685)
 
 [node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.08, 8)
+transform = Transform3D(1.6, 0, 0, 0, 1.6, -4.768371e-08, 0, 4.768371e-08, 1.6, -8, 2.2814531, 8)

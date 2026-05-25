@@ -84,6 +84,10 @@ func _spawn_bonk_particles() -> void:
 	particles.scale_amount_min = 0.04
 	particles.scale_amount_max = 0.11
 	particles.color = Color(1.0, 0.35, 0.2, 1.0)
+	var mesh := SphereMesh.new()
+	mesh.radius = 0.03
+	mesh.height = 0.06
+	particles.mesh = mesh
 	get_tree().current_scene.add_child(particles)
 	particles.global_position = global_position + Vector3.UP * 1.1
 	particles.emitting = true

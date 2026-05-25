@@ -1,12 +1,12 @@
 extends CharacterBody3D
 
-@export var walk_speed := 2.0
+@export var walk_speed := 6.0
 @export var turn_speed := 8.0
 @export var wander_min := Vector2(-34.0, -22.0)
 @export var wander_max := Vector2(12.0, 20.0)
 @export var target_reached_distance := 1.2
-@export var bonk_stun_time := 0.9
-@export var bonk_force := 7.0
+@export var bonk_stun_time := 4
+@export var bonk_force := 18.0
 
 @export_group("Facing")
 @export var face_negative_z := true
@@ -89,7 +89,7 @@ func bonk(from_position: Vector3) -> void:
 	_knockback = away.normalized() * bonk_force
 	_stun_time = bonk_stun_time
 	_bonk_phase = 0.0
-	_spawn_bonk_particles()
+	_spawn_bonk_particles(from_position)
 
 
 func _pick_new_target() -> void:
@@ -140,23 +140,68 @@ func _apply_visual_pose(target_position: Vector3, target_rotation: Vector3, delt
 	_visual.rotation.z = lerp_angle(_visual.rotation.z, target_rotation.z, t)
 
 
-func _spawn_bonk_particles() -> void:
+func _spawn_bonk_particles(from_position: Vector3) -> void:
+	var away := global_position - from_position
+	away.y = 0.0
+	if away == Vector3.ZERO:
+		away = global_transform.basis.z
+	var hit_direction := away.normalized()
+	var burst_position := global_position + Vector3.UP * 0.55 - hit_direction * 0.28
+
 	var particles := CPUParticles3D.new()
-	particles.amount = 18
-	particles.lifetime = 0.25
+	particles.amount = 36
+	particles.lifetime = 0.34
 	particles.one_shot = true
 	particles.explosiveness = 0.95
 	particles.emission_shape = CPUParticles3D.EMISSION_SHAPE_SPHERE
-	particles.emission_sphere_radius = 0.18
-	particles.direction = Vector3.UP
-	particles.spread = 70.0
-	particles.initial_velocity_min = 1.2
-	particles.initial_velocity_max = 3.4
-	particles.gravity = Vector3(0.0, -6.0, 0.0)
-	particles.scale_amount_min = 0.04
-	particles.scale_amount_max = 0.11
-	particles.color = Color(1.0, 0.35, 0.2, 1.0)
+	particles.emission_sphere_radius = 0.12
+	particles.direction = (away.normalized() + Vector3.UP * 0.65).normalized()
+	particles.spread = 50.0
+	particles.initial_velocity_min = 2.0
+	particles.initial_velocity_max = 5.2
+	particles.gravity = Vector3(0.0, -8.0, 0.0)
+	particles.scale_amount_min = 0.05
+	particles.scale_amount_max = 0.14
+	particles.color = Color(1.0, 0.74, 0.22, 1.0)
+	var mesh := SphereMesh.new()
+	mesh.radius = 0.035
+	mesh.height = 0.07
+	particles.mesh = mesh
 	get_tree().current_scene.add_child(particles)
-	particles.global_position = global_position + Vector3.UP * 1.1
+	particles.global_position = burst_position
 	particles.emitting = true
 	particles.finished.connect(particles.queue_free)
+	_spawn_hit_sparks(burst_position, hit_direction)
+
+
+func _spawn_hit_sparks(burst_position: Vector3, hit_direction: Vector3) -> void:
+	var container := Node3D.new()
+	get_tree().current_scene.add_child(container)
+	container.global_position = burst_position
+
+	var material := StandardMaterial3D.new()
+	material.albedo_color = Color(1.0, 0.78, 0.16, 1.0)
+	material.emission_enabled = true
+	material.emission = Color(1.0, 0.45, 0.05, 1.0)
+	material.emission_energy_multiplier = 1.8
+	material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+
+	for i in range(14):
+		var spark := MeshInstance3D.new()
+		var spark_mesh := BoxMesh.new()
+		spark_mesh.size = Vector3(0.08, 0.08, 0.08) * randf_range(0.7, 1.35)
+		spark.mesh = spark_mesh
+		spark.material_override = material
+		container.add_child(spark)
+
+		var spread := Vector3(randf_range(-0.8, 0.8), randf_range(0.2, 1.0), randf_range(-0.8, 0.8))
+		var spark_dir := (hit_direction * randf_range(0.6, 1.2) + spread).normalized()
+		var distance := randf_range(0.45, 1.15)
+		var tween := spark.create_tween()
+		tween.set_parallel(true)
+		tween.tween_property(spark, "position", spark_dir * distance, randf_range(0.22, 0.38))
+		tween.tween_property(spark, "scale", Vector3.ZERO, 0.34)
+		tween.tween_property(spark, "rotation", Vector3(randf(), randf(), randf()) * TAU, 0.34)
+
+	await get_tree().create_timer(0.42).timeout
+	container.queue_free()

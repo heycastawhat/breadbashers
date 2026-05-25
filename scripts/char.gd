@@ -420,6 +420,10 @@ func _spawn_particle_burst(burst_position: Vector3, color: Color) -> void:
 	particles.scale_amount_min = 0.04
 	particles.scale_amount_max = 0.12
 	particles.color = color
+	var mesh := SphereMesh.new()
+	mesh.radius = 0.035
+	mesh.height = 0.07
+	particles.mesh = mesh
 	get_tree().current_scene.add_child(particles)
 	particles.global_position = burst_position
 	particles.emitting = true
