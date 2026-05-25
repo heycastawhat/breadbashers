@@ -16,12 +16,12 @@ shape = SubResource("BoxShape3D_player")
 [node name="goose" parent="." unique_id=1855516839 instance=ExtResource("2_0hjuo")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.02605158, 0, 0)
 
+[node name="HeldItemAnchor" type="Node3D" parent="goose" unique_id=398812001]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999964, 0, 0, 0, 0.99999964, -0.17569533, 3.967224, -0.98019284)
+
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1194750240]
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1780882605]
 transform = Transform3D(1, 0, 0, 0, 0.9548075, 0.2972249, 0, -0.2972249, 0.9548075, 0, 1.2864532, 1.4788783)
 current = true
 fov = 61.200672
-
-[node name="HeldItemAnchor" type="Node3D" parent="goose" unique_id=398812001]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0868386, 3.48, -1.55)

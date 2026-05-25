@@ -5,13 +5,13 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_person"]
 radius = 0.42
-height = 2.5850587
+height = 2.6167114
 
 [node name="Person" type="CharacterBody3D" unique_id=1564634097]
 script = ExtResource("2_person")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=346143706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.044091314, 1.2925293, -0.01875912)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004901737, 0.016242743, -0.01875912)
 shape = SubResource("CapsuleShape3D_person")
 
 [node name="Sketchfab_Scene" parent="." unique_id=799719670 instance=ExtResource("1_model")]

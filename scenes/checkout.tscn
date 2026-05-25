@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://b8d8otmaxxes1" path="res://rawmodels/checkoutrrev.glb" id="1_ne2dc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_checkout"]
-size = Vector3(0.12, 0.06, 0.04)
+size = Vector3(0.112246096, 0.042695314, 0.024648437)
 
 [node name="Tinkercad GLTF Scene" unique_id=638651906 instance=ExtResource("1_ne2dc")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="0" unique_id=873621847]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.083, 0.03, -0.0665)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1599146400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07933721, 0.023910472, -0.07004288)
 shape = SubResource("BoxShape3D_checkout")
