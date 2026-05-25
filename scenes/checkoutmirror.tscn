@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://c5p3s0jw77t7w"]
+[gd_scene format=3 uid="uid://ccxcyf322mqc4"]
 
-[ext_resource type="PackedScene" uid="uid://b8d8otmaxxes1" path="res://rawmodels/checkoutrrev.glb" id="1_fk1ky"]
+[ext_resource type="PackedScene" uid="uid://b8d8otmaxxes1" path="res://rawmodels/checkoutrrev.glb" id="1_ne2dc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_checkout"]
 size = Vector3(0.020069847, 0.03568176, 0.008417969)
@@ -8,7 +8,8 @@ size = Vector3(0.020069847, 0.03568176, 0.008417969)
 [sub_resource type="BoxShape3D" id="BoxShape3D_5lr6l"]
 size = Vector3(0.0977478, 0.022399902, 0.025154114)
 
-[node name="Tinkercad GLTF Scene" unique_id=638651906 instance=ExtResource("1_fk1ky")]
+[node name="Tinkercad GLTF Scene" unique_id=638651906 instance=ExtResource("1_ne2dc")]
+transform = Transform3D(1, 8.742278e-08, 0, -8.742278e-08, 1, 0, 0, 0, -1, 0, 0, 0)
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="." index="0" unique_id=548707977]
 
@@ -21,3 +22,6 @@ shape = SubResource("BoxShape3D_checkout")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=185064879]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0825447, 0.011098057, -0.0671408)
 shape = SubResource("BoxShape3D_5lr6l")
+
+[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="Node" parent_id_path=PackedInt32Array(1075462186) index="0" unique_id=1257031664]
+transform = Transform3D(1.0031257, 0, 0, 0, 1.0031257, 0, 0, 0, 1.0031257, 0, 0, 0)
