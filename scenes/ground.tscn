@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://b42stnawvsuxr" path="res://scripts/combine_area.gd" id="6_od37v"]
 [ext_resource type="PackedScene" uid="uid://cbmw33eqrcpdl" path="res://scenes/bread1.tscn" id="7_vjnaj"]
 [ext_resource type="PackedScene" uid="uid://dnnr2lbs7y0f4" path="res://scenes/person.tscn" id="8_hokwi"]
+[ext_resource type="Texture2D" uid="uid://p8uvt7snqhtg" path="res://textures/Screenshot 2026-05-27 101716.png" id="8_modao"]
 [ext_resource type="PackedScene" uid="uid://ddlkptdbhnmf6" path="res://rawmodels/Wall.glb" id="9_2c1ag"]
 [ext_resource type="PackedScene" uid="uid://ba7ad4d1oe2jk" path="res://rawmodels/door and windows.glb" id="10_modao"]
 [ext_resource type="PackedScene" uid="uid://cosigt1fy6ktq" path="res://rawmodels/wall with door and window.glb" id="11_176r3"]
@@ -28,6 +29,12 @@ size = Vector3(1, 3.112793, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_modao"]
 size = Vector3(0.9589844, 2.5596924, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_176r3"]
+albedo_texture = ExtResource("8_modao")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vuhkc"]
+material = SubResource("StandardMaterial3D_176r3")
+
 [sub_resource type="Environment" id="Environment_2c1ag"]
 background_mode = 1
 background_color = Color(0, 0, 0.0627451, 1)
@@ -44,125 +51,230 @@ size = Vector3(0.9182129, 1, 1.09375)
 [node name="Light" type="Node3D" parent="Building" unique_id=1744422039]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5661926, 0)
 
-[node name="DirectionalLight3D59" type="SpotLight3D" parent="Building/Light" unique_id=1787743405]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -31.969765, 6.6913366, 20.290379)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 22.725348
-spot_angle = 80.0
-
-[node name="DirectionalLight3D60" type="SpotLight3D" parent="Building/Light" unique_id=2066071274]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -18.947533, 6.6913366, 20.290379)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
-
-[node name="DirectionalLight3D61" type="SpotLight3D" parent="Building/Light" unique_id=962249857]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -5.304715, 6.6913366, 20.290379)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
-
-[node name="DirectionalLight3D62" type="SpotLight3D" parent="Building/Light" unique_id=31410406]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 7.1691856, 6.6913366, 20.290379)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
-
-[node name="DirectionalLight3D65" type="SpotLight3D" parent="Building/Light" unique_id=1367909841]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -31.969765, 6.6913366, 4.796139)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
-
-[node name="DirectionalLight3D71" type="SpotLight3D" parent="Building/Light" unique_id=494914576]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -31.969765, 6.6913366, -10.535084)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
-
-[node name="DirectionalLight3D72" type="SpotLight3D" parent="Building/Light" unique_id=1865741631]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -18.947533, 6.6913366, -1.5350838)
-light_color = Color(1, 1, 0.58431375, 1)
-light_energy = 10.0
-light_size = 1.0
-shadow_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
-
 [node name="DirectionalLight3D73" type="SpotLight3D" parent="Building/Light" unique_id=1584122510]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -5.304715, 6.6913366, -1.8753052)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.871239, 6.6913385, 22.229813)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
+light_indirect_energy = 7.261
 light_size = 1.0
 shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
 
-[node name="DirectionalLight3D74" type="SpotLight3D" parent="Building/Light" unique_id=969281781]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 7.1691856, 6.6913366, -1.8753052)
+[node name="DirectionalLight3D74" type="SpotLight3D" parent="Building/Light" unique_id=1370059806]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, 22.173187)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
+light_indirect_energy = 7.261
 light_size = 1.0
 shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
 
-[node name="DirectionalLight3D77" type="SpotLight3D" parent="Building/Light" unique_id=917649438]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -31.969765, 6.6913366, -22.840883)
+[node name="DirectionalLight3D75" type="SpotLight3D" parent="Building/Light" unique_id=1887751965]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 6.968358, 6.6913347, 22.173187)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
+light_indirect_energy = 7.261
 light_size = 1.0
 shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
 
-[node name="DirectionalLight3D78" type="SpotLight3D" parent="Building/Light" unique_id=1824839001]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -18.947533, 6.6913366, -22.840883)
+[node name="DirectionalLight3D76" type="SpotLight3D" parent="Building/Light" unique_id=1614214690]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.871239, 6.6913385, 8.237645)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
+light_indirect_energy = 7.261
 light_size = 1.0
 shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
 
-[node name="DirectionalLight3D79" type="SpotLight3D" parent="Building/Light" unique_id=868422298]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -5.304715, 6.6913366, -22.840883)
+[node name="DirectionalLight3D77" type="SpotLight3D" parent="Building/Light" unique_id=1384055310]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, 8.18102)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
+light_indirect_energy = 7.261
 light_size = 1.0
 shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
 
-[node name="DirectionalLight3D80" type="SpotLight3D" parent="Building/Light" unique_id=1634076304]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 7.1691856, 6.6913366, -22.840883)
+[node name="DirectionalLight3D78" type="SpotLight3D" parent="Building/Light" unique_id=921467076]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 6.968358, 6.6913347, 8.18102)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
+light_indirect_energy = 7.261
 light_size = 1.0
 shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
+
+[node name="DirectionalLight3D79" type="SpotLight3D" parent="Building/Light" unique_id=740925924]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.833405, 6.6913347, -7.6504354)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 80.0
+
+[node name="DirectionalLight3D80" type="SpotLight3D" parent="Building/Light" unique_id=2057629321]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, -7.6504354)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 80.0
+
+[node name="DirectionalLight3D81" type="SpotLight3D" parent="Building/Light" unique_id=1699066503]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 6.968358, 6.6913347, -7.6504354)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 80.0
+
+[node name="DirectionalLight3D82" type="SpotLight3D" parent="Building/Light" unique_id=335249366]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.833405, 6.6913347, -21.279346)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 80.0
+
+[node name="DirectionalLight3D83" type="SpotLight3D" parent="Building/Light" unique_id=738030272]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, -21.279346)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 80.0
+
+[node name="DirectionalLight3D84" type="SpotLight3D" parent="Building/Light" unique_id=1936842659]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 6.968358, 6.6913347, -21.279346)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 80.0
+
+[node name="DirectionalLight3D85" type="SpotLight3D" parent="Building/Light" unique_id=1709112935]
+transform = Transform3D(0.95278335, -0.2624748, -0.15267818, -0.07829873, -0.6981729, 0.71163476, -0.29338196, -0.6660792, -0.685759, -129.27708, 100.090576, -144.7447)
+layers = 1023
+light_color = Color(0.9793568, 0.9782515, 0.8903731, 1)
+light_energy = 16.0
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 16.0
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 10.0
+shadow_normal_bias = 10.0
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 707.9018
+spot_angle = 36.43528
 
 [node name="Floor" type="StaticBody3D" parent="Building" unique_id=578449385]
-transform = Transform3D(1.0325806, 0, 0, 0, 1, 0, 0, 0, 1.131668, 0, 0, 0)
+transform = Transform3D(2.637844, 0, 0, 0, 1, 0, 0, 0, 1.7732291, 0, 0, 19.264149)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Building/Floor" unique_id=56183446]
 transform = Transform3D(27.307384, 0, 0, 0, 1, 0, 0, 0, 27.193146, -10.815556, -0.020217896, -0.013924599)
@@ -529,6 +641,10 @@ transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -39.
 
 [node name="Tinkercad GLTF Scene4" parent="Building/Checkouts/Checkout Unit5" unique_id=420502809 instance=ExtResource("5_ct7o8")]
 transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -36.402218, 1.9670123e-08, 17.520761)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Building" unique_id=144974110]
+transform = Transform3D(80.298294, -8.7422734e-08, -8.212196e-07, -8.603643e-06, -0.25999874, -9.070599, -4.95331e-06, -0.9656083, 2.4423404, -10.610002, 8.979809, 41.892326)
+mesh = SubResource("PlaneMesh_vuhkc")
 
 [node name="Player" parent="." unique_id=836268720 instance=ExtResource("1_yh8r4")]
 transform = Transform3D(0.723, 0, 0, 0, 0.7, 0, 0, 0, 0.792, 9.755443, 1.008276, 25.983698)
