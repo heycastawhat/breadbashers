@@ -655,6 +655,9 @@ acceleration = 15.0
 [node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
 transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, 8)
 
+[node name="Person2" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, -8.962715)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=83100187]
 environment = SubResource("Environment_2c1ag")
 
