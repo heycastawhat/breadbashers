@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://dnnr2lbs7y0f4"]
 
-[ext_resource type="PackedScene" uid="uid://dj45vewaoba6v" path="res://rawmodels/low-poly_human.glb" id="1_model"]
+[ext_resource type="PackedScene" uid="uid://cn1bhym5shoys" path="res://rawmodels/Ch23_nonPBR.fbx" id="2_5dovg"]
 [ext_resource type="Script" uid="uid://b7x7fii4d0npg" path="res://scripts/person.gd" id="2_person"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_person"]
-radius = 0.42
-height = 2.6167114
+radius = 0.21240234
+height = 1.7640083
 
 [node name="Person" type="CharacterBody3D" unique_id=1564634097]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 script = ExtResource("2_person")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=346143706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004901737, 0.016242743, -0.01875912)
+transform = Transform3D(0.999999, -0.0011721787, 0.00081768155, 0.0011679879, 0.99998635, 0.005110144, -0.00082365645, -0.005109185, 0.9999866, -3.2071046e-05, 0.8838452, -0.00013978835)
 shape = SubResource("CapsuleShape3D_person")
 
-[node name="Sketchfab_Scene" parent="." unique_id=799719670 instance=ExtResource("1_model")]
+[node name="Ch23_nonPBR" parent="." unique_id=1714873415 instance=ExtResource("2_5dovg")]

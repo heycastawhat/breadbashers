@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://ba7ad4d1oe2jk" path="res://rawmodels/door and windows.glb" id="10_modao"]
 [ext_resource type="PackedScene" uid="uid://cosigt1fy6ktq" path="res://rawmodels/wall with door and window.glb" id="11_176r3"]
 [ext_resource type="PackedScene" uid="uid://ccxcyf322mqc4" path="res://scenes/checkoutmirror.tscn" id="12_2c1ag"]
+[ext_resource type="PackedScene" uid="uid://bp67exopfhk6m" path="res://scenes/Yeast.tscn" id="14_vuhkc"]
+[ext_resource type="Script" uid="uid://b0jio315d524q" path="res://scripts/spin.gd" id="15_26mqe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv0v5"]
 albedo_color = Color(0.28155392, 0.28155392, 0.26904383, 1)
@@ -652,11 +654,8 @@ move_speed = 6.0
 sprint_speed = 10.0
 acceleration = 15.0
 
-[node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, 8)
-
-[node name="Person2" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, -8.962715)
+[node name="Person" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, -4.4703476e-08, 0, 4.4703476e-08, 1.5, -8, 1.3434587, -8.962715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=83100187]
 environment = SubResource("Environment_2c1ag")
@@ -670,11 +669,15 @@ shape = SubResource("BoxShape3D_1ywih")
 
 [node name="Products" type="Node3D" parent="." unique_id=2026582834]
 
-[node name="takesomething" parent="Products" unique_id=1376127316 instance=ExtResource("3_tv015")]
+[node name="chocolate" parent="Products" unique_id=1376127316 instance=ExtResource("3_tv015")]
 transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495, 0, 0.03154773, -36.945152, 0.3360747, -18.268784)
 
-[node name="takesomething2" parent="Products" unique_id=1879361439 instance=ExtResource("3_tv015")]
+[node name="chocolate1" parent="Products" unique_id=1879361439 instance=ExtResource("3_tv015")]
 transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495, 0, 0.03154773, -36.99773, 0.3360747, -15.019747)
 
-[node name="Sketchfab_Scene" parent="Products" unique_id=1627003701 instance=ExtResource("7_vjnaj")]
+[node name="Bread" parent="Products" unique_id=1627003701 instance=ExtResource("7_vjnaj")]
 transform = Transform3D(-0.004433065, 0, 0.99999017, 0, 1, 0, -0.99999017, 0, -0.004433065, -19.531322, 0.40800828, -8.314685)
+
+[node name="Yeast" parent="Products" unique_id=1817114127 instance=ExtResource("14_vuhkc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -19.51259, 1.6314886, 3.0625494)
+script = ExtResource("15_26mqe")

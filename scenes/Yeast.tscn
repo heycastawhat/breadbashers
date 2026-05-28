@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bp67exopfhk6m"]
+
+[ext_resource type="PackedScene" uid="uid://du4uctnxp7p40" path="res://rawmodels/possiblyYeast.glb" id="1_314sb"]
+
+[node name="Node3D" type="Node3D" unique_id=1817114127]
+
+[node name="Tinkercad GLTF Scene" parent="." unique_id=1042387800 instance=ExtResource("1_314sb")]
+transform = Transform3D(75, 0, 0, 0, 75, 0, 0, 0, 75, 1.2196604, -0.28656328, -1.3639567)

@@ -31,7 +31,7 @@ var _bonk_phase := 0.0
 var _visual_base_position := Vector3.ZERO
 var _visual_base_rotation := Vector3.ZERO
 
-@onready var _visual: Node3D = $Sketchfab_Scene
+@onready var _visual: Node3D = $Ch23_nonPBR
 
 
 func _ready() -> void:
