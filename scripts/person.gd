@@ -13,11 +13,11 @@ extends CharacterBody3D
 
 @export_group("Animation")
 @export var walk_freq := 8.0
-@export var walk_bob_height := 0.045
+@export var walk_bob_height := 0.1
 @export var walk_sway_degrees := 4.0
 @export var walk_pitch_degrees := 2.5
 @export var idle_bob_freq := 1.4
-@export var idle_bob_height := 0.012
+@export var idle_bob_height := 0.1
 @export var bonk_tilt_degrees := 18.0
 @export var bonk_spin_degrees := 380.0
 @export var animation_smoothing := 14.0
@@ -31,7 +31,9 @@ var _bonk_phase := 0.0
 var _visual_base_position := Vector3.ZERO
 var _visual_base_rotation := Vector3.ZERO
 
-@onready var _visual: Node3D = $Sketchfab_Scene
+@onready var _visual: Node3D = $Ch23_nonPBR
+@onready var _honk_player: AudioStreamPlayer3D = AudioStreamPlayer3D.new()
+var _honk_sound := preload("res://assets/Honk1.mp3")
 
 
 func _ready() -> void:
@@ -40,7 +42,13 @@ func _ready() -> void:
 	_visual_base_rotation = _visual.rotation
 	_idle_phase = randf() * TAU
 	_pick_new_target()
+	add_child(_honk_player)
+	_honk_player.stream = _honk_sound
 
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
+			_honk_player.play()
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -172,7 +180,6 @@ func _spawn_bonk_particles(from_position: Vector3) -> void:
 	particles.emitting = true
 	particles.finished.connect(particles.queue_free)
 	_spawn_hit_sparks(burst_position, hit_direction)
-
 
 func _spawn_hit_sparks(burst_position: Vector3, hit_direction: Vector3) -> void:
 	var container := Node3D.new()

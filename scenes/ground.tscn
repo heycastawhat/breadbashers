@@ -687,7 +687,7 @@ sprint_speed = 10.0
 acceleration = 15.0
 
 [node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, 8)
+transform = Transform3D(1.2, 0, 0, 0, 1.2, -3.5762785e-08, 0, 3.5762785e-08, 1.2, -8, 1.3434587, 8)
 
 [node name="Person2" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
 transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, -8.962715)
