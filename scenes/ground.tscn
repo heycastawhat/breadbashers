@@ -117,7 +117,7 @@ shadow_opacity = 0.8
 shadow_blur = 0.51
 distance_fade_enabled = true
 spot_range = 18.789873
-spot_angle = 80.0
+spot_angle = 64.76393
 
 [node name="DirectionalLight3D77" type="SpotLight3D" parent="Building/Light" unique_id=1384055310]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, 8.18102)
@@ -153,8 +153,8 @@ distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
 
-[node name="DirectionalLight3D79" type="SpotLight3D" parent="Building/Light" unique_id=740925924]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.833405, 6.6913347, -7.6504354)
+[node name="DirectionalLight3D86" type="SpotLight3D" parent="Building/Light" unique_id=65031012]
+transform = Transform3D(1, 0, 0, 0, 0.17809805, 0.9840127, 0, -0.9840127, 0.17809805, -32.873035, 8.806442, -23.352291)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
 light_indirect_energy = 7.261
@@ -167,8 +167,42 @@ shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
 distance_fade_enabled = true
-spot_range = 18.789873
+spot_range = 19.312815
 spot_angle = 80.0
+
+[node name="DirectionalLight3D87" type="SpotLight3D" parent="Building/Light" unique_id=165783424]
+transform = Transform3D(0.4239262, -0.65695906, -0.62345123, 0.15346864, -0.62630665, 0.7643215, -0.8925995, -0.41969612, -0.16468519, -19.478518, 5.232812, -9.179558)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 19.312815
+spot_angle = 55.394905
+
+[node name="DirectionalLight3D79" type="SpotLight3D" parent="Building/Light" unique_id=740925924]
+transform = Transform3D(0.84686214, 2.3246262e-08, -0.5318125, 0.5318125, -3.7017518e-08, 0.84686214, 0, -1, -4.371139e-08, -28.833405, 6.6913347, -7.6504354)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 19.312815
+spot_angle = 55.394905
 
 [node name="DirectionalLight3D80" type="SpotLight3D" parent="Building/Light" unique_id=2057629321]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, -7.6504354)
@@ -205,7 +239,7 @@ spot_range = 18.789873
 spot_angle = 80.0
 
 [node name="DirectionalLight3D82" type="SpotLight3D" parent="Building/Light" unique_id=335249366]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.833405, 6.6913347, -21.279346)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -1.8751826, 11.761648, 9.685841)
 light_color = Color(1, 1, 0.58431375, 1)
 light_energy = 10.0
 light_indirect_energy = 7.261
@@ -218,8 +252,8 @@ shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
 distance_fade_enabled = true
-spot_range = 18.789873
-spot_angle = 80.0
+spot_range = 51.219395
+spot_angle = 89.99
 
 [node name="DirectionalLight3D83" type="SpotLight3D" parent="Building/Light" unique_id=738030272]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -9.637029, 6.6913347, -21.279346)
@@ -643,7 +677,7 @@ transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -39.
 transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -36.402218, 1.9670123e-08, 17.520761)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Building" unique_id=144974110]
-transform = Transform3D(80.298294, -8.7422734e-08, -8.212196e-07, -8.603643e-06, -0.25999874, -9.070599, -4.95331e-06, -0.9656083, 2.4423404, -10.610002, 8.979809, 41.892326)
+transform = Transform3D(80.298294, -8.7422734e-08, -8.212196e-07, -8.603643e-06, -0.25999874, -9.070599, -4.95331e-06, -0.9656083, 2.4423404, -10.599267, 8.94242, 41.909035)
 mesh = SubResource("PlaneMesh_vuhkc")
 
 [node name="Player" parent="." unique_id=836268720 instance=ExtResource("1_yh8r4")]
