@@ -27,7 +27,7 @@ size = Vector3(76.98045, 1, 54.020905)
 size = Vector3(1, 3.112793, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_modao"]
-size = Vector3(0.9589844, 2.5596924, 1)
+size = Vector3(0.946167, 2.5596924, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_176r3"]
 albedo_texture = ExtResource("8_modao")
@@ -42,7 +42,7 @@ ambient_light_source = 3
 ambient_light_color = Color(0, 0, 0.13333334, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1ywih"]
-size = Vector3(0.9182129, 1, 1.09375)
+size = Vector3(1.1422119, 2.1473389, 0.9579468)
 
 [node name="Node3D" type="Node3D" unique_id=395626185]
 
@@ -308,7 +308,7 @@ spot_range = 707.9018
 spot_angle = 36.43528
 
 [node name="Floor" type="StaticBody3D" parent="Building" unique_id=578449385]
-transform = Transform3D(2.637844, 0, 0, 0, 1, 0, 0, 0, 1.7732291, 0, 0, 19.264149)
+transform = Transform3D(2.637844, 0, 0, 0, 1, 0, 0, 0, 3.0296912, 0, 0, 19.264149)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Building/Floor" unique_id=56183446]
 transform = Transform3D(27.307384, 0, 0, 0, 1, 0, 0, 0, 27.193146, -10.815556, -0.020217896, -0.013924599)
@@ -320,243 +320,369 @@ shape = SubResource("BoxShape3D_yh8r4")
 
 [node name="Shelfs" type="Node3D" parent="Building" unique_id=233460621]
 
-[node name="Back Shelfs" type="Node3D" parent="Building/Shelfs" unique_id=2140582080]
+[node name="BigBackShelfs" type="Node3D" parent="Building/Shelfs" unique_id=2140582080]
 
-[node name="Node3D2" parent="Building/Shelfs/Back Shelfs" unique_id=183398275 instance=ExtResource("2_t7tip")]
+[node name="Node3D2" parent="Building/Shelfs/BigBackShelfs" unique_id=183398275 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.788448, 0.14297938, -26.771936)
 
-[node name="Node3D3" parent="Building/Shelfs/Back Shelfs" unique_id=49881870 instance=ExtResource("2_t7tip")]
+[node name="Node3D3" parent="Building/Shelfs/BigBackShelfs" unique_id=49881870 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.774603, 0.14297938, -26.771936)
 
-[node name="Node3D6" parent="Building/Shelfs/Back Shelfs" unique_id=906467364 instance=ExtResource("2_t7tip")]
+[node name="Node3D6" parent="Building/Shelfs/BigBackShelfs" unique_id=906467364 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.820435, 0.14297938, -26.771936)
 
-[node name="Node3D7" parent="Building/Shelfs/Back Shelfs" unique_id=1924093879 instance=ExtResource("2_t7tip")]
+[node name="Node3D7" parent="Building/Shelfs/BigBackShelfs" unique_id=1924093879 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.806587, 0.14297938, -26.771936)
 
-[node name="Node3D4" parent="Building/Shelfs/Back Shelfs" unique_id=1722335262 instance=ExtResource("2_t7tip")]
+[node name="Node3D4" parent="Building/Shelfs/BigBackShelfs" unique_id=1722335262 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.763733, 0.14297938, -26.771936)
 
-[node name="Node3D5" parent="Building/Shelfs/Back Shelfs" unique_id=1357087401 instance=ExtResource("2_t7tip")]
+[node name="Node3D5" parent="Building/Shelfs/BigBackShelfs" unique_id=1357087401 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.749886, 0.14297938, -26.771936)
 
-[node name="Node3D8" parent="Building/Shelfs/Back Shelfs" unique_id=2061369645 instance=ExtResource("2_t7tip")]
+[node name="Node3D8" parent="Building/Shelfs/BigBackShelfs" unique_id=2061369645 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.707804, 0.14297938, -26.771936)
 
-[node name="Node3D9" parent="Building/Shelfs/Back Shelfs" unique_id=1787574501 instance=ExtResource("2_t7tip")]
+[node name="Node3D9" parent="Building/Shelfs/BigBackShelfs" unique_id=1787574501 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.693958, 0.14297938, -26.771936)
 
-[node name="Node3D10" parent="Building/Shelfs/Back Shelfs" unique_id=1596252617 instance=ExtResource("2_t7tip")]
+[node name="Node3D10" parent="Building/Shelfs/BigBackShelfs" unique_id=1596252617 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.739788, 0.14297938, -26.771936)
 
-[node name="Node3D11" parent="Building/Shelfs/Back Shelfs" unique_id=1614295823 instance=ExtResource("2_t7tip")]
+[node name="Node3D11" parent="Building/Shelfs/BigBackShelfs" unique_id=1614295823 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.725943, 0.14297938, -26.771936)
 
-[node name="Node3D145" parent="Building/Shelfs/Back Shelfs" unique_id=1241432761 instance=ExtResource("2_t7tip")]
+[node name="Node3D145" parent="Building/Shelfs/BigBackShelfs" unique_id=1241432761 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.298096, 0.14297938, 7.105301)
 
-[node name="Node3D146" parent="Building/Shelfs/Back Shelfs" unique_id=1675354468 instance=ExtResource("2_t7tip")]
+[node name="Node3D146" parent="Building/Shelfs/BigBackShelfs" unique_id=1675354468 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.341583, 0.14297938, -1.9553661)
 
-[node name="Node3D147" parent="Building/Shelfs/Back Shelfs" unique_id=1838901598 instance=ExtResource("2_t7tip")]
+[node name="Node3D147" parent="Building/Shelfs/BigBackShelfs" unique_id=1838901598 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.35605, 0.14297938, -4.9691787)
 
-[node name="Node3D148" parent="Building/Shelfs/Back Shelfs" unique_id=324566074 instance=ExtResource("2_t7tip")]
+[node name="Node3D148" parent="Building/Shelfs/BigBackShelfs" unique_id=324566074 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.312637, 0.14297938, 4.0765514)
 
-[node name="Node3D149" parent="Building/Shelfs/Back Shelfs" unique_id=2124974627 instance=ExtResource("2_t7tip")]
+[node name="Node3D149" parent="Building/Shelfs/BigBackShelfs" unique_id=2124974627 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.327103, 0.14297938, 1.0627365)
 
-[node name="Node3D150" parent="Building/Shelfs/Back Shelfs" unique_id=2077626289 instance=ExtResource("2_t7tip")]
+[node name="Node3D150" parent="Building/Shelfs/BigBackShelfs" unique_id=2077626289 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.3705, 0.14297938, -7.980015)
 
-[node name="Node3D151" parent="Building/Shelfs/Back Shelfs" unique_id=1521625459 instance=ExtResource("2_t7tip")]
+[node name="Node3D151" parent="Building/Shelfs/BigBackShelfs" unique_id=1521625459 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.384964, 0.14297938, -10.993828)
 
-[node name="Node3D152" parent="Building/Shelfs/Back Shelfs" unique_id=1523757106 instance=ExtResource("2_t7tip")]
+[node name="Node3D152" parent="Building/Shelfs/BigBackShelfs" unique_id=1523757106 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.399414, 0.14297938, -14.00389)
 
-[node name="Node3D153" parent="Building/Shelfs/Back Shelfs" unique_id=852670138 instance=ExtResource("2_t7tip")]
+[node name="Node3D153" parent="Building/Shelfs/BigBackShelfs" unique_id=852670138 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.41388, 0.14297938, -17.017696)
 
-[node name="Node3D154" parent="Building/Shelfs/Back Shelfs" unique_id=268077694 instance=ExtResource("2_t7tip")]
+[node name="Node3D154" parent="Building/Shelfs/BigBackShelfs" unique_id=268077694 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.473206, 0.14297938, -20.025024)
 
-[node name="Node3D155" parent="Building/Shelfs/Back Shelfs" unique_id=2045014836 instance=ExtResource("2_t7tip")]
+[node name="Node3D155" parent="Building/Shelfs/BigBackShelfs" unique_id=2045014836 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.487656, 0.14297938, -23.035088)
 
-[node name="Node3D156" parent="Building/Shelfs/Back Shelfs" unique_id=1057491435 instance=ExtResource("2_t7tip")]
+[node name="Node3D156" parent="Building/Shelfs/BigBackShelfs" unique_id=1057491435 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.50212, 0.14297938, -26.048893)
 
-[node name="Shelf1" type="Node3D" parent="Building/Shelfs" unique_id=205089339]
+[node name="BigShelf1" type="Node3D" parent="Building/Shelfs" unique_id=205089339]
 
-[node name="Node3D36" parent="Building/Shelfs/Shelf1" unique_id=1981528329 instance=ExtResource("2_t7tip")]
+[node name="Node3D36" parent="Building/Shelfs/BigShelf1" unique_id=1981528329 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.19081, 0.14297938, -17.228086)
 
-[node name="Node3D102" parent="Building/Shelfs/Shelf1" unique_id=1709031857 instance=ExtResource("2_t7tip")]
+[node name="Node3D102" parent="Building/Shelfs/BigShelf1" unique_id=1709031857 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.147323, 0.14297938, -8.167419)
 
-[node name="Node3D103" parent="Building/Shelfs/Shelf1" unique_id=1318640665 instance=ExtResource("2_t7tip")]
+[node name="Node3D103" parent="Building/Shelfs/BigShelf1" unique_id=1318640665 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.132857, 0.14297938, -5.153607)
 
-[node name="Node3D104" parent="Building/Shelfs/Shelf1" unique_id=1220413237 instance=ExtResource("2_t7tip")]
+[node name="Node3D104" parent="Building/Shelfs/BigShelf1" unique_id=1220413237 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.176272, 0.14297938, -14.199337)
 
-[node name="Node3D105" parent="Building/Shelfs/Shelf1" unique_id=1603580587 instance=ExtResource("2_t7tip")]
+[node name="Node3D105" parent="Building/Shelfs/BigShelf1" unique_id=1603580587 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.161807, 0.14297938, -11.185522)
 
-[node name="Node3D106" parent="Building/Shelfs/Shelf1" unique_id=141196779 instance=ExtResource("2_t7tip")]
+[node name="Node3D106" parent="Building/Shelfs/BigShelf1" unique_id=141196779 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.118407, 0.14297938, -2.1427712)
 
-[node name="Node3D107" parent="Building/Shelfs/Shelf1" unique_id=614005010 instance=ExtResource("2_t7tip")]
+[node name="Node3D107" parent="Building/Shelfs/BigShelf1" unique_id=614005010 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.103942, 0.14297938, 0.87104225)
 
-[node name="Node3D108" parent="Building/Shelfs/Shelf1" unique_id=625740989 instance=ExtResource("2_t7tip")]
+[node name="Node3D108" parent="Building/Shelfs/BigShelf1" unique_id=625740989 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.089496, 0.14297938, 3.881104)
 
-[node name="Node3D109" parent="Building/Shelfs/Shelf1" unique_id=411216812 instance=ExtResource("2_t7tip")]
+[node name="Node3D109" parent="Building/Shelfs/BigShelf1" unique_id=411216812 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.0750265, 0.14297938, 6.8949103)
 
-[node name="Node3D37" parent="Building/Shelfs/Shelf1" unique_id=1862266579 instance=ExtResource("2_t7tip")]
+[node name="Node3D37" parent="Building/Shelfs/BigShelf1" unique_id=1862266579 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.566047, 0.14297938, 6.9103775)
 
-[node name="Node3D110" parent="Building/Shelfs/Shelf1" unique_id=1364306183 instance=ExtResource("2_t7tip")]
+[node name="Node3D110" parent="Building/Shelfs/BigShelf1" unique_id=1364306183 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.609534, 0.14297938, -2.1502895)
 
-[node name="Node3D111" parent="Building/Shelfs/Shelf1" unique_id=1956365699 instance=ExtResource("2_t7tip")]
+[node name="Node3D111" parent="Building/Shelfs/BigShelf1" unique_id=1956365699 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.624, 0.14297938, -5.164102)
 
-[node name="Node3D112" parent="Building/Shelfs/Shelf1" unique_id=1353996678 instance=ExtResource("2_t7tip")]
+[node name="Node3D112" parent="Building/Shelfs/BigShelf1" unique_id=1353996678 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.580585, 0.14297938, 3.881628)
 
-[node name="Node3D113" parent="Building/Shelfs/Shelf1" unique_id=2060278729 instance=ExtResource("2_t7tip")]
+[node name="Node3D113" parent="Building/Shelfs/BigShelf1" unique_id=2060278729 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.59505, 0.14297938, 0.8678131)
 
-[node name="Node3D114" parent="Building/Shelfs/Shelf1" unique_id=1105305173 instance=ExtResource("2_t7tip")]
+[node name="Node3D114" parent="Building/Shelfs/BigShelf1" unique_id=1105305173 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.63845, 0.14297938, -8.174938)
 
-[node name="Node3D115" parent="Building/Shelfs/Shelf1" unique_id=1096594031 instance=ExtResource("2_t7tip")]
+[node name="Node3D115" parent="Building/Shelfs/BigShelf1" unique_id=1096594031 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.652915, 0.14297938, -11.188751)
 
-[node name="Node3D116" parent="Building/Shelfs/Shelf1" unique_id=1695141860 instance=ExtResource("2_t7tip")]
+[node name="Node3D116" parent="Building/Shelfs/BigShelf1" unique_id=1695141860 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.667361, 0.14297938, -14.198813)
 
-[node name="Node3D117" parent="Building/Shelfs/Shelf1" unique_id=62173702 instance=ExtResource("2_t7tip")]
+[node name="Node3D117" parent="Building/Shelfs/BigShelf1" unique_id=62173702 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.6818285, 0.14297938, -17.21262)
 
-[node name="Shelf2" type="Node3D" parent="Building/Shelfs" unique_id=11496325]
+[node name="BigShelf2" type="Node3D" parent="Building/Shelfs" unique_id=11496325]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5678463, 0, 0)
 
-[node name="Node3D36" parent="Building/Shelfs/Shelf2" unique_id=904541215 instance=ExtResource("2_t7tip")]
+[node name="Node3D36" parent="Building/Shelfs/BigShelf2" unique_id=904541215 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.855568, 0.14297938, -17.228086)
 
-[node name="Node3D102" parent="Building/Shelfs/Shelf2" unique_id=653409310 instance=ExtResource("2_t7tip")]
+[node name="Node3D102" parent="Building/Shelfs/BigShelf2" unique_id=653409310 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.81208, 0.14297938, -8.167419)
 
-[node name="Node3D103" parent="Building/Shelfs/Shelf2" unique_id=1560713689 instance=ExtResource("2_t7tip")]
+[node name="Node3D103" parent="Building/Shelfs/BigShelf2" unique_id=1560713689 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.797615, 0.14297938, -5.153607)
 
-[node name="Node3D104" parent="Building/Shelfs/Shelf2" unique_id=1160748071 instance=ExtResource("2_t7tip")]
+[node name="Node3D104" parent="Building/Shelfs/BigShelf2" unique_id=1160748071 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.84103, 0.14297938, -14.199337)
 
-[node name="Node3D105" parent="Building/Shelfs/Shelf2" unique_id=290403228 instance=ExtResource("2_t7tip")]
+[node name="Node3D105" parent="Building/Shelfs/BigShelf2" unique_id=290403228 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.826565, 0.14297938, -11.185522)
 
-[node name="Node3D106" parent="Building/Shelfs/Shelf2" unique_id=1498240661 instance=ExtResource("2_t7tip")]
+[node name="Node3D106" parent="Building/Shelfs/BigShelf2" unique_id=1498240661 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.783165, 0.14297938, -2.1427712)
 
-[node name="Node3D107" parent="Building/Shelfs/Shelf2" unique_id=1355980712 instance=ExtResource("2_t7tip")]
+[node name="Node3D107" parent="Building/Shelfs/BigShelf2" unique_id=1355980712 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.7687, 0.14297938, 0.87104225)
 
-[node name="Node3D108" parent="Building/Shelfs/Shelf2" unique_id=99810651 instance=ExtResource("2_t7tip")]
+[node name="Node3D108" parent="Building/Shelfs/BigShelf2" unique_id=99810651 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.754253, 0.14297938, 3.881104)
 
-[node name="Node3D109" parent="Building/Shelfs/Shelf2" unique_id=1110846536 instance=ExtResource("2_t7tip")]
+[node name="Node3D109" parent="Building/Shelfs/BigShelf2" unique_id=1110846536 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.739784, 0.14297938, 6.8949103)
 
-[node name="Node3D37" parent="Building/Shelfs/Shelf2" unique_id=239750561 instance=ExtResource("2_t7tip")]
+[node name="Node3D37" parent="Building/Shelfs/BigShelf2" unique_id=239750561 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.230804, 0.14297938, 6.9103775)
 
-[node name="Node3D110" parent="Building/Shelfs/Shelf2" unique_id=1932707068 instance=ExtResource("2_t7tip")]
+[node name="Node3D110" parent="Building/Shelfs/BigShelf2" unique_id=1932707068 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.274292, 0.14297938, -2.1502895)
 
-[node name="Node3D111" parent="Building/Shelfs/Shelf2" unique_id=279369933 instance=ExtResource("2_t7tip")]
+[node name="Node3D111" parent="Building/Shelfs/BigShelf2" unique_id=279369933 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.288757, 0.14297938, -5.164102)
 
-[node name="Node3D112" parent="Building/Shelfs/Shelf2" unique_id=1098579448 instance=ExtResource("2_t7tip")]
+[node name="Node3D112" parent="Building/Shelfs/BigShelf2" unique_id=1098579448 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.245342, 0.14297938, 3.881628)
 
-[node name="Node3D113" parent="Building/Shelfs/Shelf2" unique_id=1956303058 instance=ExtResource("2_t7tip")]
+[node name="Node3D113" parent="Building/Shelfs/BigShelf2" unique_id=1956303058 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.259808, 0.14297938, 0.8678131)
 
-[node name="Node3D114" parent="Building/Shelfs/Shelf2" unique_id=881492910 instance=ExtResource("2_t7tip")]
+[node name="Node3D114" parent="Building/Shelfs/BigShelf2" unique_id=881492910 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.303207, 0.14297938, -8.174938)
 
-[node name="Node3D115" parent="Building/Shelfs/Shelf2" unique_id=1973912919 instance=ExtResource("2_t7tip")]
+[node name="Node3D115" parent="Building/Shelfs/BigShelf2" unique_id=1973912919 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.317673, 0.14297938, -11.188751)
 
-[node name="Node3D116" parent="Building/Shelfs/Shelf2" unique_id=1033134174 instance=ExtResource("2_t7tip")]
+[node name="Node3D116" parent="Building/Shelfs/BigShelf2" unique_id=1033134174 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.332119, 0.14297938, -14.198813)
 
-[node name="Node3D117" parent="Building/Shelfs/Shelf2" unique_id=600087657 instance=ExtResource("2_t7tip")]
+[node name="Node3D117" parent="Building/Shelfs/BigShelf2" unique_id=600087657 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.346586, 0.14297938, -17.21262)
 
-[node name="Shelf3" type="Node3D" parent="Building/Shelfs" unique_id=1457947487]
+[node name="BigShelf3" type="Node3D" parent="Building/Shelfs" unique_id=1457947487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6328907, 0, 0)
 
-[node name="Node3D118" parent="Building/Shelfs/Shelf3" unique_id=1043731822 instance=ExtResource("2_t7tip")]
+[node name="Node3D118" parent="Building/Shelfs/BigShelf3" unique_id=1043731822 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.441135, 0.14297938, -17.228086)
 
-[node name="Node3D119" parent="Building/Shelfs/Shelf3" unique_id=2084980639 instance=ExtResource("2_t7tip")]
+[node name="Node3D119" parent="Building/Shelfs/BigShelf3" unique_id=2084980639 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.397648, 0.14297938, -8.167419)
 
-[node name="Node3D120" parent="Building/Shelfs/Shelf3" unique_id=826256834 instance=ExtResource("2_t7tip")]
+[node name="Node3D120" parent="Building/Shelfs/BigShelf3" unique_id=826256834 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.383183, 0.14297938, -5.153607)
 
-[node name="Node3D121" parent="Building/Shelfs/Shelf3" unique_id=1805540240 instance=ExtResource("2_t7tip")]
+[node name="Node3D121" parent="Building/Shelfs/BigShelf3" unique_id=1805540240 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.426598, 0.14297938, -14.199337)
 
-[node name="Node3D122" parent="Building/Shelfs/Shelf3" unique_id=1722316536 instance=ExtResource("2_t7tip")]
+[node name="Node3D122" parent="Building/Shelfs/BigShelf3" unique_id=1722316536 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.412132, 0.14297938, -11.185522)
 
-[node name="Node3D123" parent="Building/Shelfs/Shelf3" unique_id=1723580850 instance=ExtResource("2_t7tip")]
+[node name="Node3D123" parent="Building/Shelfs/BigShelf3" unique_id=1723580850 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.368732, 0.14297938, -2.1427712)
 
-[node name="Node3D124" parent="Building/Shelfs/Shelf3" unique_id=940763621 instance=ExtResource("2_t7tip")]
+[node name="Node3D124" parent="Building/Shelfs/BigShelf3" unique_id=940763621 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.354267, 0.14297938, 0.87104225)
 
-[node name="Node3D125" parent="Building/Shelfs/Shelf3" unique_id=1361424808 instance=ExtResource("2_t7tip")]
+[node name="Node3D125" parent="Building/Shelfs/BigShelf3" unique_id=1361424808 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.33982, 0.14297938, 3.881104)
 
-[node name="Node3D126" parent="Building/Shelfs/Shelf3" unique_id=472402318 instance=ExtResource("2_t7tip")]
+[node name="Node3D126" parent="Building/Shelfs/BigShelf3" unique_id=472402318 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.325352, 0.14297938, 6.8949103)
 
-[node name="Node3D127" parent="Building/Shelfs/Shelf3" unique_id=1294853739 instance=ExtResource("2_t7tip")]
+[node name="Node3D127" parent="Building/Shelfs/BigShelf3" unique_id=1294853739 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.816372, 0.14297938, 6.9103775)
 
-[node name="Node3D128" parent="Building/Shelfs/Shelf3" unique_id=1406253765 instance=ExtResource("2_t7tip")]
+[node name="Node3D128" parent="Building/Shelfs/BigShelf3" unique_id=1406253765 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.85986, 0.14297938, -2.1502895)
 
-[node name="Node3D129" parent="Building/Shelfs/Shelf3" unique_id=1702361951 instance=ExtResource("2_t7tip")]
+[node name="Node3D129" parent="Building/Shelfs/BigShelf3" unique_id=1702361951 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.874325, 0.14297938, -5.164102)
 
-[node name="Node3D130" parent="Building/Shelfs/Shelf3" unique_id=1003064015 instance=ExtResource("2_t7tip")]
+[node name="Node3D130" parent="Building/Shelfs/BigShelf3" unique_id=1003064015 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.83091, 0.14297938, 3.881628)
 
-[node name="Node3D131" parent="Building/Shelfs/Shelf3" unique_id=1063907137 instance=ExtResource("2_t7tip")]
+[node name="Node3D131" parent="Building/Shelfs/BigShelf3" unique_id=1063907137 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.845375, 0.14297938, 0.8678131)
 
-[node name="Node3D132" parent="Building/Shelfs/Shelf3" unique_id=168973429 instance=ExtResource("2_t7tip")]
+[node name="Node3D132" parent="Building/Shelfs/BigShelf3" unique_id=168973429 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.888775, 0.14297938, -8.174938)
 
-[node name="Node3D133" parent="Building/Shelfs/Shelf3" unique_id=827179832 instance=ExtResource("2_t7tip")]
+[node name="Node3D133" parent="Building/Shelfs/BigShelf3" unique_id=827179832 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.90324, 0.14297938, -11.188751)
 
-[node name="Node3D134" parent="Building/Shelfs/Shelf3" unique_id=1977439848 instance=ExtResource("2_t7tip")]
+[node name="Node3D134" parent="Building/Shelfs/BigShelf3" unique_id=1977439848 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.917686, 0.14297938, -14.198813)
 
-[node name="Node3D135" parent="Building/Shelfs/Shelf3" unique_id=513683240 instance=ExtResource("2_t7tip")]
+[node name="Node3D135" parent="Building/Shelfs/BigShelf3" unique_id=513683240 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.932154, 0.14297938, -17.21262)
+
+[node name="FruitVegShelfs" type="Node3D" parent="Building/Shelfs" unique_id=188065602]
+
+[node name="FruitVegShelf1" type="Node3D" parent="Building/Shelfs/FruitVegShelfs" unique_id=912139946]
+
+[node name="Tinkercad GLTF Scene5" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf1" unique_id=609898395 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -4.8291683, -6.59704e-06, 1.3878527)
+
+[node name="Tinkercad GLTF Scene6" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf1" unique_id=337210808 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -3.0401306, 0, 1.3862678)
+
+[node name="Tinkercad GLTF Scene7" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf1" unique_id=1531670163 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -1.2469308, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene14" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf1" unique_id=2052632287 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 0.55601907, 0, 1.370511)
+
+[node name="Tinkercad GLTF Scene15" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf1" unique_id=891590568 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, -1.2371802, -0.011186268, 1.3827324)
+
+[node name="Tinkercad GLTF Scene16" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf1" unique_id=791965253 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, -3.0357344, -0.011186268, 1.3827325)
+
+[node name="FruitVegShelf2" type="Node3D" parent="Building/Shelfs/FruitVegShelfs" unique_id=66626830]
+
+[node name="Tinkercad GLTF Scene10" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf2" unique_id=1200907034 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 5.799926, 0, 1.3862678)
+
+[node name="Tinkercad GLTF Scene11" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf2" unique_id=1895220252 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 7.5931253, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene12" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf2" unique_id=609879913 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 9.39168, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene8" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf2" unique_id=1796983677 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 11.185114, -6.5970235e-06, 1.3689252)
+
+[node name="Tinkercad GLTF Scene9" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf2" unique_id=1292822972 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 9.396076, 0, 1.3705102)
+
+[node name="Tinkercad GLTF Scene13" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf2" unique_id=114869023 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 7.602875, -0.011186268, 1.3827316)
+
+[node name="FruitVegShelf5" type="Node3D" parent="Building/Shelfs/FruitVegShelfs" unique_id=1270556919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.417037)
+
+[node name="Tinkercad GLTF Scene5" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf5" unique_id=1817443074 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -4.8291683, -6.59704e-06, 1.3878527)
+
+[node name="Tinkercad GLTF Scene6" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf5" unique_id=236263078 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -3.0401306, 0, 1.3862678)
+
+[node name="Tinkercad GLTF Scene7" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf5" unique_id=2081281402 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -1.2469308, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene14" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf5" unique_id=580739049 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 0.55601907, 0, 1.370511)
+
+[node name="Tinkercad GLTF Scene15" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf5" unique_id=1452734758 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, -1.2371802, -0.011186268, 1.3827324)
+
+[node name="Tinkercad GLTF Scene16" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf5" unique_id=1545648064 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, -3.0357344, -0.011186268, 1.3827325)
+
+[node name="FruitVegShelf6" type="Node3D" parent="Building/Shelfs/FruitVegShelfs" unique_id=1605351011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.417037)
+
+[node name="Tinkercad GLTF Scene10" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf6" unique_id=654158641 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 5.799926, 0, 1.3862678)
+
+[node name="Tinkercad GLTF Scene11" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf6" unique_id=1232889398 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 7.5931253, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene12" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf6" unique_id=2075495168 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 9.39168, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene8" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf6" unique_id=1018448509 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 11.185114, -6.5970235e-06, 1.3689252)
+
+[node name="Tinkercad GLTF Scene9" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf6" unique_id=1323935912 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 9.396076, 0, 1.3705102)
+
+[node name="Tinkercad GLTF Scene13" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf6" unique_id=1248027402 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 7.602875, -0.011186268, 1.3827316)
+
+[node name="FruitVegShelf3" type="Node3D" parent="Building/Shelfs/FruitVegShelfs" unique_id=1879984981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.8380013)
+
+[node name="Tinkercad GLTF Scene5" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf3" unique_id=1327681078 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -4.8291683, -6.59704e-06, 1.3878527)
+
+[node name="Tinkercad GLTF Scene6" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf3" unique_id=1243103378 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -3.0401306, 0, 1.3862678)
+
+[node name="Tinkercad GLTF Scene7" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf3" unique_id=789639201 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -1.2469308, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene14" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf3" unique_id=2041226652 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 0.55601907, 0, 1.370511)
+
+[node name="Tinkercad GLTF Scene15" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf3" unique_id=1672323551 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, -1.2371802, -0.011186268, 1.3827324)
+
+[node name="Tinkercad GLTF Scene16" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf3" unique_id=1866727179 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, -3.0357344, -0.011186268, 1.3827325)
+
+[node name="FruitVegShelf4" type="Node3D" parent="Building/Shelfs/FruitVegShelfs" unique_id=229343190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.8380013)
+
+[node name="Tinkercad GLTF Scene10" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf4" unique_id=1748462777 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 5.799926, 0, 1.3862678)
+
+[node name="Tinkercad GLTF Scene11" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf4" unique_id=1498149320 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 7.5931253, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene12" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf4" unique_id=348928894 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, 9.39168, -0.011186268, 1.3740466)
+
+[node name="Tinkercad GLTF Scene8" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf4" unique_id=1748467737 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 11.185114, -6.5970235e-06, 1.3689252)
+
+[node name="Tinkercad GLTF Scene9" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf4" unique_id=1036340380 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 9.396076, 0, 1.3705102)
+
+[node name="Tinkercad GLTF Scene13" parent="Building/Shelfs/FruitVegShelfs/FruitVegShelf4" unique_id=1171809368 instance=ExtResource("5_ct7o8")]
+transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 7.602875, -0.011186268, 1.3827316)
 
 [node name="Walls" type="StaticBody3D" parent="Building" unique_id=1230255857]
 
@@ -567,7 +693,7 @@ transform = Transform3D(1, 0, 0, 0, 25, 0, 0, 0, 80, -38.101, 0, -3.365488)
 transform = Transform3D(1, 0, 0, 0, 25, 0, 0, 0, 80, 16.208584, 0, -3.365488)
 
 [node name="Tinkercad GLTF Scene6" parent="Building/Walls" unique_id=384453199 instance=ExtResource("9_2c1ag")]
-transform = Transform3D(-8.742278e-08, 0, -80, 0, 25, 0, 2, 0, -3.4969112e-06, -7.147607, 0, -27.457184)
+transform = Transform3D(-8.742278e-08, 0, -55.93092, 0, 25, 0, 2, 0, -2.4448182e-06, -16.979582, 0, -27.457184)
 
 [node name="Tinkercad GLTF Scene8" parent="Building/Walls" unique_id=446095379 instance=ExtResource("10_modao")]
 transform = Transform3D(-8.742278e-08, 0, 80, 0, 25, 0, -2, 0, -3.4969112e-06, -16.911842, 0, 27.219847)
@@ -588,7 +714,7 @@ transform = Transform3D(58.616886, 0, 0, 0, 3.880677, 0, 0, 0, 0.19244397, -10.9
 shape = SubResource("BoxShape3D_modao")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="Building/Walls" unique_id=860513511]
-transform = Transform3D(58.616886, 0, 0, 0, 3.880677, 0, 0, 0, 0.19244397, -9.731848, 4.970933, -27.626425)
+transform = Transform3D(40.981205, 0, 0, 0, 3.880677, 0, 0, 0, 0.19244397, -19.048956, 4.970933, -27.626425)
 shape = SubResource("BoxShape3D_modao")
 
 [node name="Checkouts" type="Node3D" parent="Building" unique_id=1091428059]
@@ -598,7 +724,7 @@ shape = SubResource("BoxShape3D_modao")
 [node name="Tinkercad GLTF Scene" parent="Building/Checkouts/Checkout Unit" unique_id=638651906 instance=ExtResource("4_1ywih")]
 transform = Transform3D(-2.4041265e-06, 0, 54.99999, 0, 54.99999, 0, -54.99999, 0, -2.4041265e-06, -31.680487, 0, 15.867111)
 
-[node name="Tinkercad GLTF Scene5" parent="Building/Checkouts/Checkout Unit" unique_id=609898395 instance=ExtResource("5_ct7o8")]
+[node name="Tinkercad GLTF Scene5" parent="Building/Checkouts/Checkout Unit" unique_id=1598492049 instance=ExtResource("5_ct7o8")]
 transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -38.16346, -7.550714e-06, 17.54284)
 
 [node name="Tinkercad GLTF Scene4" parent="Building/Checkouts/Checkout Unit" unique_id=1323307074 instance=ExtResource("5_ct7o8")]
@@ -658,25 +784,7 @@ transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -39.
 [node name="Tinkercad GLTF Scene4" parent="Building/Checkouts/Checkout Unit4" unique_id=534404068 instance=ExtResource("5_ct7o8")]
 transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -36.402218, 1.9670123e-08, 17.520761)
 
-[node name="Checkout Unit5" type="Node3D" parent="Building/Checkouts" unique_id=1355381620]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.367443, 0, 0)
-
-[node name="Tinkercad GLTF Scene" parent="Building/Checkouts/Checkout Unit5" unique_id=281689266 instance=ExtResource("4_1ywih")]
-transform = Transform3D(-2.4041265e-06, 0, 54.99999, 0, 54.99999, 0, -54.99999, 0, -2.4041265e-06, -31.680487, 0, 15.867111)
-
-[node name="Tinkercad GLTF Scene5" parent="Building/Checkouts/Checkout Unit5" unique_id=1254025061 instance=ExtResource("5_ct7o8")]
-transform = Transform3D(3, 0, 1.0490733e-06, 0, 3, 0, -1.0490733e-06, 0, 3, -38.16346, -7.550714e-06, 17.54284)
-
-[node name="Tinkercad GLTF Scene2" parent="Building/Checkouts/Checkout Unit5" unique_id=931894291 instance=ExtResource("12_2c1ag")]
-transform = Transform3D(-2.4041262e-06, -3.6301295e-13, -54.999996, -8.304767e-06, 54.999996, 0, -54.999996, -8.304767e-06, 2.4041262e-06, -42.89034, 0.09717274, 15.695927)
-
-[node name="Tinkercad GLTF Scene3" parent="Building/Checkouts/Checkout Unit5" unique_id=1659618464 instance=ExtResource("5_ct7o8")]
-transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -39.94035, 1.9670123e-08, 17.536564)
-
-[node name="Tinkercad GLTF Scene4" parent="Building/Checkouts/Checkout Unit5" unique_id=420502809 instance=ExtResource("5_ct7o8")]
-transform = Transform3D(3, 0, 5.2453663e-07, 0, 3, 0, -5.2453663e-07, 0, 3, -36.402218, 1.9670123e-08, 17.520761)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Building" unique_id=144974110]
+[node name="outside" type="MeshInstance3D" parent="Building" unique_id=144974110]
 transform = Transform3D(80.298294, -8.7422734e-08, -8.212196e-07, -8.603643e-06, -0.25999874, -9.070599, -4.95331e-06, -0.9656083, 2.4423404, -10.599267, 8.94242, 41.909035)
 mesh = SubResource("PlaneMesh_vuhkc")
 
@@ -687,10 +795,10 @@ sprint_speed = 10.0
 acceleration = 15.0
 
 [node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, -3.5762785e-08, 0, 3.5762785e-08, 1.2, -8, 1.3434587, 8)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, -4.4703476e-08, 0, 4.4703476e-08, 1.5, -8, 1.3434587, 8)
 
 [node name="Person2" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1, 0, 0, 0, 1, -2.9802319e-08, 0, 2.9802319e-08, 1, -8, 1.3434587, -8.962715)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, -4.4703476e-08, 0, 4.4703476e-08, 1.5, -8, 1.3434587, -8.962715)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=83100187]
 environment = SubResource("Environment_2c1ag")
@@ -699,7 +807,7 @@ environment = SubResource("Environment_2c1ag")
 script = ExtResource("6_od37v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea" unique_id=729210365]
-transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 8.061436, 0, -16.409004)
+transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 6.1691866, 4.8503532, -19.386045)
 shape = SubResource("BoxShape3D_1ywih")
 
 [node name="Products" type="Node3D" parent="." unique_id=2026582834]
