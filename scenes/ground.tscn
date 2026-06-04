@@ -691,7 +691,7 @@ transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 7.
 transform = Transform3D(1, 0, 0, 0, 25, 0, 0, 0, 80, -38.101, 0, -3.365488)
 
 [node name="Tinkercad GLTF Scene7" parent="Building/Walls" unique_id=1646557573 instance=ExtResource("9_2c1ag")]
-transform = Transform3D(1, 0, 0, 0, 25, 0, 0, 0, 80, 16.208584, 0, -3.365488)
+transform = Transform3D(0.9995514, 1.0531949e-09, -2.9802322e-08, -9.7998054e-11, 25.002941, 0, 0, 9.313226e-10, 101.70666, 16.22215, -0.0035620863, -11.572345)
 
 [node name="Tinkercad GLTF Scene6" parent="Building/Walls" unique_id=384453199 instance=ExtResource("9_2c1ag")]
 transform = Transform3D(-8.742278e-08, 0, -55.93092, 0, 25, 0, 2, 0, -2.4448182e-06, -16.979582, 0, -27.457184)
@@ -707,7 +707,7 @@ transform = Transform3D(-8.742278e-08, 0, 80, 0, 25, 0, -2, 0, -3.4969112e-06, -
 transform = Transform3D(-8.742278e-08, 0, 80, 0, 25, 0, -2, 0, -3.4969112e-06, -16.907385, -8.0952195e-06, 27.221035)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Building/Walls" unique_id=433322647]
-transform = Transform3D(0.27139115, 0, 0, 0, 3.2867477, 0, 0, 0, 55.482224, 16.220463, 4.910061, 0)
+transform = Transform3D(0.27126947, -2.3171651e-09, -7.450581e-09, 2.3305802e-10, 3.2871354, 3.7252903e-09, 5.820766e-11, 0, 70.536385, 16.23252, 4.9068956, -7.293116)
 shape = SubResource("BoxShape3D_2c1ag")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Building/Walls" unique_id=1608740376]
@@ -719,11 +719,25 @@ transform = Transform3D(58.616886, 0, 0, 0, 3.880677, 0, 0, 0, 0.19244397, -10.9
 shape = SubResource("BoxShape3D_modao")
 
 [node name="Tinkercad GLTF Scene10" parent="Building/Walls" unique_id=1317416255 instance=ExtResource("9_2c1ag")]
-transform = Transform3D(-8.8475645e-08, -1.7719685e-08, -55.916927, 5.820766e-11, 13.170702, 3.7362042e-08, 2.0000422, 4.656613e-10, -2.4214387e-06, -1.29757, 4.6731634, -27.433287)
+transform = Transform3D(-8.917414e-08, -1.5970727e-08, -22.851042, 5.820766e-11, 13.199417, -1.0111762e-08, 2.001482, 4.656613e-10, -9.909272e-07, 9.249256, 4.7259507, -27.415873)
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="Building/Walls" unique_id=1152557981]
-transform = Transform3D(40.990566, -1.0186341e-09, -1.7462298e-10, 3.2410753e-08, 2.0444512, 2.1827873e-11, 4.4703484e-08, -4.0745363e-10, 0.19244811, -3.355149, 7.287058, -27.601477)
+transform = Transform3D(16.751228, -3.3975311e-09, -2.3283064e-10, -1.6750164e-08, 2.0399792, 5.0931703e-11, 2.6077032e-08, -6.9849193e-10, 0.19230944, 8.400822, 7.3458977, -27.582062)
 shape = SubResource("BoxShape3D_modao")
+
+[node name="Tinkercad GLTF Scene11" parent="Building/Walls" unique_id=462688631 instance=ExtResource("9_2c1ag")]
+transform = Transform3D(1.0032881, -1.8264473e-08, -3.7252903e-09, -1.3822614e-09, 12.216148, -9.313226e-10, 0, -1.8626451e-09, 25.050016, 0.36886647, -0.06993657, -37.346287)
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Building/Walls" unique_id=1841055720]
+transform = Transform3D(0.27228364, -1.05668505e-08, -1.4901161e-08, 3.2031267e-10, 1.6060585, 1.3969839e-09, 2.0372681e-10, 0, 17.372892, 0.39712745, 2.3296688, -36.29305)
+shape = SubResource("BoxShape3D_2c1ag")
+
+[node name="Tinkercad GLTF Scene12" parent="Building/Walls" unique_id=753764293 instance=ExtResource("9_2c1ag")]
+transform = Transform3D(2.5083078e-05, -0.055725373, 23.134624, -0.0054649566, 12.215437, 0.10553747, -1.0033996, -0.06653196, 3.5241246e-06, 7.2445564, -0.037863545, -42.623737)
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Building/Walls" unique_id=1804581003]
+transform = Transform3D(6.807648e-06, -0.007326223, 16.044514, -0.001483141, 1.6059653, 0.07319321, -0.272314, -0.008746959, 2.4605542e-06, 8.206242, 2.3659291, -42.6652)
+shape = SubResource("BoxShape3D_2c1ag")
 
 [node name="Checkouts" type="Node3D" parent="Building" unique_id=1091428059]
 
