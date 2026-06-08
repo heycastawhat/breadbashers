@@ -370,9 +370,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.739788, 0.14297938, -26.7
 [node name="Node3D11" parent="Building/Shelfs/BigBackShelfs" unique_id=1614295823 instance=ExtResource("2_t7tip")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.725943, 0.14297938, -26.771936)
 
-[node name="Node3D145" parent="Building/Shelfs/BigBackShelfs" unique_id=1241432761 instance=ExtResource("2_t7tip")]
-transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.298096, 0.14297938, 7.105301)
-
 [node name="Node3D146" parent="Building/Shelfs/BigBackShelfs" unique_id=1675354468 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -37.341583, 0.14297938, -1.9553661)
 
@@ -432,12 +429,6 @@ transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004
 [node name="Node3D108" parent="Building/Shelfs/BigShelf1" unique_id=625740989 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.089496, 0.14297938, 3.881104)
 
-[node name="Node3D109" parent="Building/Shelfs/BigShelf1" unique_id=411216812 instance=ExtResource("2_t7tip")]
-transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -11.0750265, 0.14297938, 6.8949103)
-
-[node name="Node3D37" parent="Building/Shelfs/BigShelf1" unique_id=1862266579 instance=ExtResource("2_t7tip")]
-transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.566047, 0.14297938, 6.9103775)
-
 [node name="Node3D110" parent="Building/Shelfs/BigShelf1" unique_id=1364306183 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -9.609534, 0.14297938, -2.1502895)
 
@@ -489,12 +480,6 @@ transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004
 [node name="Node3D108" parent="Building/Shelfs/BigShelf2" unique_id=99810651 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.754253, 0.14297938, 3.881104)
 
-[node name="Node3D109" parent="Building/Shelfs/BigShelf2" unique_id=1110846536 instance=ExtResource("2_t7tip")]
-transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -19.739784, 0.14297938, 6.8949103)
-
-[node name="Node3D37" parent="Building/Shelfs/BigShelf2" unique_id=239750561 instance=ExtResource("2_t7tip")]
-transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.230804, 0.14297938, 6.9103775)
-
 [node name="Node3D110" parent="Building/Shelfs/BigShelf2" unique_id=1932707068 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -18.274292, 0.14297938, -2.1502895)
 
@@ -545,12 +530,6 @@ transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004
 
 [node name="Node3D125" parent="Building/Shelfs/BigShelf3" unique_id=1361424808 instance=ExtResource("2_t7tip")]
 transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.33982, 0.14297938, 3.881104)
-
-[node name="Node3D126" parent="Building/Shelfs/BigShelf3" unique_id=472402318 instance=ExtResource("2_t7tip")]
-transform = Transform3D(0.004799623, 0, -0.9999885, 0, 1, 0, 0.9999885, 0, 0.004799623, -27.325352, 0.14297938, 6.8949103)
-
-[node name="Node3D127" parent="Building/Shelfs/BigShelf3" unique_id=1294853739 instance=ExtResource("2_t7tip")]
-transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.816372, 0.14297938, 6.9103775)
 
 [node name="Node3D128" parent="Building/Shelfs/BigShelf3" unique_id=1406253765 instance=ExtResource("2_t7tip")]
 transform = Transform3D(-0.0047995355, 0, 0.9999885, 0, 1, 0, -0.9999885, 0, -0.0047995355, -25.85986, 0.14297938, -2.1502895)
