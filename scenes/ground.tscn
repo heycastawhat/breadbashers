@@ -42,7 +42,7 @@ ambient_light_source = 3
 ambient_light_color = Color(0, 0, 0.13333334, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1ywih"]
-size = Vector3(1.1422119, 2.1473389, 0.9579468)
+size = Vector3(0.91290283, 0.9081421, 0.89751816)
 
 [node name="Node3D" type="Node3D" unique_id=395626185]
 transform = Transform3D(0.9999861, 0.0050048498, 0.0016510196, -0.0050041243, 0.99998736, -0.00044229373, -0.0016532161, 0.0004340116, 0.99999857, 0, 0, 0)
@@ -289,6 +289,23 @@ shadow_blur = 0.51
 distance_fade_enabled = true
 spot_range = 18.789873
 spot_angle = 80.0
+
+[node name="DirectionalLight3D88" type="SpotLight3D" parent="Building/Light" unique_id=1961914026]
+transform = Transform3D(1, -3.7252903e-09, -1.7429329e-09, 4.5815796e-11, -4.3713953e-08, 1.0000001, 0, -1, -2.9656803e-08, 7.021634, 0.97111773, -36.206444)
+light_color = Color(1, 1, 0.58431375, 1)
+light_energy = 10.0
+light_indirect_energy = 7.261
+light_size = 1.0
+shadow_enabled = true
+shadow_bias = 7.579
+shadow_normal_bias = 9.075
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = -1.063
+shadow_opacity = 0.8
+shadow_blur = 0.51
+distance_fade_enabled = true
+spot_range = 18.789873
+spot_angle = 87.13365
 
 [node name="DirectionalLight3D85" type="SpotLight3D" parent="Building/Light" unique_id=1709112935]
 transform = Transform3D(0.95278335, -0.2624748, -0.15267818, -0.07829873, -0.6981729, 0.71163476, -0.29338196, -0.6660792, -0.685759, -129.27708, 100.090576, -144.7447)
@@ -739,6 +756,13 @@ transform = Transform3D(2.5083078e-05, -0.055725373, 23.134624, -0.0054649566, 1
 transform = Transform3D(6.807648e-06, -0.007326223, 16.044514, -0.001483141, 1.6059653, 0.07319321, -0.272314, -0.008746959, 2.4605542e-06, 8.206242, 2.3659291, -42.6652)
 shape = SubResource("BoxShape3D_2c1ag")
 
+[node name="Tinkercad GLTF Scene13" parent="Building/Walls" unique_id=1016949654 instance=ExtResource("9_2c1ag")]
+transform = Transform3D(-0.0065875435, -0.053520262, 23.108555, 0.99071777, 0.23404318, 0.15380687, -0.005398716, 43.014626, 0.027915604, 7.377699, 4.8761387, -44.656525)
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Building/Walls" unique_id=100714755]
+transform = Transform3D(-0.0017878027, -0.0070363125, 16.026411, 0.2688723, 0.030769661, 0.106669374, -0.0014651645, 5.655137, 0.019360263, 8.337143, 4.9266825, -36.20735)
+shape = SubResource("BoxShape3D_2c1ag")
+
 [node name="Checkouts" type="Node3D" parent="Building" unique_id=1091428059]
 
 [node name="Checkout Unit" type="Node3D" parent="Building/Checkouts" unique_id=965055137]
@@ -829,7 +853,7 @@ environment = SubResource("Environment_2c1ag")
 script = ExtResource("6_od37v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea" unique_id=729210365]
-transform = Transform3D(16.895155, 0, 0, 0, 4.764263, 0, 0, 0, 16.88038, 6.1691866, 4.8503532, -19.386045)
+transform = Transform3D(16.895155, -6.8219583e-07, 1.7695129e-07, -8.249117e-10, 4.764263, -1.5599653e-07, 0, -1.6298145e-09, 16.88038, 8.102989, 2.5579185, -35.18068)
 shape = SubResource("BoxShape3D_1ywih")
 
 [node name="Products" type="Node3D" parent="." unique_id=2026582834]
