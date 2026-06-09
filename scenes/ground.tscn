@@ -687,7 +687,7 @@ transform = Transform3D(-3, 0, -1.3113415e-06, 0, 3, 0, 1.3113415e-06, 0, -3, 7.
 transform = Transform3D(1, 0, 0, 0, 25, 0, 0, 0, 80, -38.101, 0, -3.365488)
 
 [node name="Tinkercad GLTF Scene7" parent="Building/Walls" unique_id=1646557573 instance=ExtResource("9_2c1ag")]
-transform = Transform3D(0.9995514, 1.0531949e-09, -2.9802322e-08, -9.7998054e-11, 25.002941, 0, 0, 9.313226e-10, 101.70666, 16.22215, -0.0035620863, -11.572345)
+transform = Transform3D(0.9995514, -1.3847966e-08, -4.4703484e-08, -9.7998054e-11, 25.00294, -3.7252903e-09, 0, 1.8626451e-09, 101.70666, 16.221687, -0.003564946, -11.573561)
 
 [node name="Tinkercad GLTF Scene6" parent="Building/Walls" unique_id=384453199 instance=ExtResource("9_2c1ag")]
 transform = Transform3D(-8.742278e-08, 0, -55.93092, 0, 25, 0, 2, 0, -2.4448182e-06, -16.979582, 0, -27.457184)
@@ -829,6 +829,7 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, -4.4703476e-08, 0, 4.4703476e-08, 1.5
 environment = SubResource("Environment_2c1ag")
 
 [node name="CombineArea" type="Area3D" parent="." unique_id=1910898228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.52, 0)
 script = ExtResource("6_od37v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CombineArea" unique_id=729210365]
