@@ -30,6 +30,7 @@ var _idle_phase := 0.0
 var _bonk_phase := 0.0
 var _visual_base_position := Vector3.ZERO
 var _visual_base_rotation := Vector3.ZERO
+var _spawn_position := Vector3.ZERO
 
 @onready var _visual: Node3D = $Ch23_nonPBR
 @onready var _honk_player: AudioStreamPlayer3D = AudioStreamPlayer3D.new()
@@ -41,6 +42,7 @@ func _ready() -> void:
 	_visual_base_position = _visual.position
 	_visual_base_rotation = _visual.rotation
 	_idle_phase = randf() * TAU
+	_spawn_position = global_position
 	_pick_new_target()
 	add_child(_honk_player)
 	_honk_player.stream = _honk_sound
@@ -101,11 +103,12 @@ func bonk(from_position: Vector3) -> void:
 
 
 func _pick_new_target() -> void:
-	_target = Vector3(
+	_target = _spawn_position + Vector3(
 		randf_range(wander_min.x, wander_max.x),
-		global_position.y,
+		0.0,
 		randf_range(wander_min.y, wander_max.y)
 	)
+	_target.y = global_position.y
 
 
 func _animate_walk(delta: float) -> void:

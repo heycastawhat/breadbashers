@@ -329,7 +329,7 @@ spot_angle = 36.43528
 transform = Transform3D(2.637844, 0, 0, 0, 1, 0, 0, 0, 3.0296912, 0, 0, 19.264149)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Building/Floor" unique_id=56183446]
-transform = Transform3D(27.307384, 0, 0, 0, 1, 0, 0, 0, 27.193146, -10.815556, -0.020217896, -0.013924599)
+transform = Transform3D(27.307386, -1.7772095e-10, 0, 2.0863808e-08, 1.0000001, 0, 7.450581e-09, -1.4551915e-11, 27.193148, -10.845356, -0.048493445, 0.007987976)
 mesh = SubResource("PlaneMesh_lv0v5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Building/Floor" unique_id=55431656]
@@ -820,10 +820,28 @@ sprint_speed = 10.0
 acceleration = 15.0
 
 [node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, -4.4703476e-08, 0, 4.4703476e-08, 1.5, -8, 1.3434587, 8)
+transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, -27.259182, 1.2543459, 24.422459)
 
 [node name="Person2" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, -4.4703476e-08, 0, 4.4703476e-08, 1.5, -8, 1.3434587, -8.962715)
+transform = Transform3D(1.4999998, -2.0065727e-10, -4.656613e-10, 7.6727247e-10, 1.5, -4.48199e-08, 0, 4.4703484e-08, 1.5, 3.374697, 1.403865, -1.0835832)
+
+[node name="Person3" parent="." unique_id=1416007929 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, -23.308935, 1.2549243, -18.962969)
+
+[node name="Person4" parent="." unique_id=1575351210 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, 7.0000467, 1.4084901, -31.64441)
+
+[node name="Person5" parent="." unique_id=1978365541 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, -24.092546, 1.2579254, -3.3111186)
+
+[node name="Person14" parent="." unique_id=626825411 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, -34.554176, 1.2105751, -8.96697)
+
+[node name="Person15" parent="." unique_id=645476414 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999994, -2.0065727e-10, -1.1641532e-09, 1.2333885e-09, 1.5, -4.4994522e-08, 6.9849193e-10, 4.4703484e-08, 1.5, -15.597206, 1.3037806, 4.246152)
+
+[node name="Person16" parent="." unique_id=1615136395 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999994, -2.0065727e-10, -1.1641532e-09, 1.2333885e-09, 1.5, -4.4994522e-08, 6.9849193e-10, 4.4703484e-08, 1.5, -15.239465, 1.3055719, -12.715973)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=83100187]
 environment = SubResource("Environment_2c1ag")

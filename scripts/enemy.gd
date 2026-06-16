@@ -11,10 +11,12 @@ extends CharacterBody3D
 var _target := Vector3.ZERO
 var _stun_time := 0.0
 var _knockback := Vector3.ZERO
+var _spawn_position := Vector3.ZERO
 
 
 func _ready() -> void:
 	add_to_group("enemy")
+	_spawn_position = global_position
 	_pick_new_target()
 
 
@@ -61,11 +63,12 @@ func bonk(from_position: Vector3) -> void:
 
 
 func _pick_new_target() -> void:
-	_target = Vector3(
+	_target = _spawn_position + Vector3(
 		randf_range(wander_min.x, wander_max.x),
-		global_position.y,
+		0.0,
 		randf_range(wander_min.y, wander_max.y)
 	)
+	_target.y = global_position.y
 
 
 func _spawn_bonk_particles() -> void:
