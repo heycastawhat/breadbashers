@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://bwdfrein0ssu6"]
+
+[ext_resource type="Texture2D" uid="uid://p8uvt7snqhtg" path="res://textures/Screenshot 2026-05-27 101716.png" id="1_tjwpk"]
+[ext_resource type="Texture2D" uid="uid://blhvl357nf21s" path="res://assets/Screenshot_from_2026-06-17_10-07-32-removebg-preview.png" id="2_lpubu"]
+[ext_resource type="Texture2D" uid="uid://7mc01k3if3bx" path="res://assets/Bread Bashin'.png" id="3_lt2xq"]
+[ext_resource type="Texture2D" uid="uid://cb6wu3mvaigbf" path="res://assets/Screenshot_from_2026-06-17_10-08-04-removebg-preview.png" id="4_1p5nq"]
+[ext_resource type="Texture2D" uid="uid://pj4c7a123sto" path="res://assets/3Triangle-removebg-preview.png" id="5_hob4j"]
+[ext_resource type="Script" uid="uid://ct7ww84q8mrdw" path="res://scripts/menu.gd" id="6_ekg02"]
+
+[node name="Control" type="Control" unique_id=1057736642]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_ekg02")
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=1531976431]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tjwpk")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=865983222]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.004166667
+anchor_top = 0.04537037
+anchor_right = 0.977801
+anchor_bottom = 0.31166667
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_lt2xq")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=158701396]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0010416667
+anchor_top = 0.6787037
+anchor_right = 1.0053667
+anchor_bottom = 1.1938889
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_1p5nq")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1773223641]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6515625
+anchor_top = 0.22222222
+anchor_right = 1.1391665
+anchor_bottom = 1.3193318
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_hob4j")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=586543387]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.12
+anchor_top = 0.43
+anchor_right = 0.3
+anchor_bottom = 1.12
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lpubu")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=843819021]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.42
+anchor_right = 0.5
+anchor_bottom = 0.42
+offset_left = -177.0
+offset_top = 18.400024
+offset_right = 183.0
+offset_bottom = 128.40002
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Play"
+autowrap_trim_flags = 192
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
