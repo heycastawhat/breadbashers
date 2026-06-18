@@ -13,6 +13,12 @@
 [ext_resource type="PackedScene" uid="uid://ba7ad4d1oe2jk" path="res://rawmodels/door and windows.glb" id="10_modao"]
 [ext_resource type="PackedScene" uid="uid://cosigt1fy6ktq" path="res://rawmodels/wall with door and window.glb" id="11_176r3"]
 [ext_resource type="PackedScene" uid="uid://ccxcyf322mqc4" path="res://scenes/checkoutmirror.tscn" id="12_2c1ag"]
+[ext_resource type="PackedScene" uid="uid://dt5iqhg04jdjc" path="res://rawmodels/lite milk.glb" id="13_hby33"]
+[ext_resource type="PackedScene" uid="uid://f3x4xlm372k7" path="res://rawmodels/banan milk.glb" id="14_e3s4u"]
+[ext_resource type="PackedScene" uid="uid://bouj4m5hfaww0" path="res://rawmodels/value trim milk.glb" id="15_qqas2"]
+[ext_resource type="PackedScene" uid="uid://b6mn2x41d3lb" path="res://rawmodels/strawber milk.glb" id="16_rncil"]
+[ext_resource type="PackedScene" uid="uid://bsxa8urnt010q" path="res://rawmodels/Standard Milk.glb" id="18_2tk4m"]
+[ext_resource type="PackedScene" uid="uid://d2kox0a28r0ju" path="res://rawmodels/silver milk.glb" id="18_e3s4u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv0v5"]
 albedo_color = Color(0.28155392, 0.28155392, 0.26904383, 1)
@@ -819,30 +825,6 @@ move_speed = 6.0
 sprint_speed = 10.0
 acceleration = 15.0
 
-[node name="Person" parent="." unique_id=1564634097 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, -27.259182, 1.2543459, 24.422459)
-
-[node name="Person2" parent="." unique_id=1323019048 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999998, -2.0065727e-10, -4.656613e-10, 7.6727247e-10, 1.5, -4.48199e-08, 0, 4.4703484e-08, 1.5, 3.374697, 1.403865, -1.0835832)
-
-[node name="Person3" parent="." unique_id=1416007929 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, -23.308935, 1.2549243, -18.962969)
-
-[node name="Person4" parent="." unique_id=1575351210 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, 7.0000467, 1.4084901, -31.64441)
-
-[node name="Person5" parent="." unique_id=1978365541 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, -24.092546, 1.2579254, -3.3111186)
-
-[node name="Person14" parent="." unique_id=626825411 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, -34.554176, 1.2105751, -8.96697)
-
-[node name="Person15" parent="." unique_id=645476414 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999994, -2.0065727e-10, -1.1641532e-09, 1.2333885e-09, 1.5, -4.4994522e-08, 6.9849193e-10, 4.4703484e-08, 1.5, -15.597206, 1.3037806, 4.246152)
-
-[node name="Person16" parent="." unique_id=1615136395 instance=ExtResource("8_hokwi")]
-transform = Transform3D(1.4999994, -2.0065727e-10, -1.1641532e-09, 1.2333885e-09, 1.5, -4.4994522e-08, 6.9849193e-10, 4.4703484e-08, 1.5, -15.239465, 1.3055719, -12.715973)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=83100187]
 environment = SubResource("Environment_2c1ag")
 
@@ -864,3 +846,724 @@ transform = Transform3D(0.03154773, 0, 0.14664495, 0, 0.14999999, 0, -0.14664495
 
 [node name="Sketchfab_Scene" parent="Products" unique_id=1627003701 instance=ExtResource("7_vjnaj")]
 transform = Transform3D(-0.004433065, 0, 0.99999017, 0, 1, 0, -0.99999017, 0, -0.004433065, -19.531322, 0.40800828, -8.314685)
+
+[node name="Milk" type="Node3D" parent="Products" unique_id=2077405616]
+
+[node name="Lite Milk" type="Node3D" parent="Products/Milk" unique_id=175395074]
+transform = Transform3D(1, 7.071321e-11, -1.1641532e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Tinkercad GLTF Scene4" parent="Products/Milk/Lite Milk" unique_id=535671227 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999542, -0.17514442, -0.057862557, 0.17516975, 34.999584, 0.015190412, 0.05778586, -0.015479794, 34.999947, -28.185501, 0.32600823, -28.456951)
+
+[node name="Tinkercad GLTF Scene5" parent="Products/Milk/Lite Milk" unique_id=1276291061 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -28.184856, 0.32583982, -28.844936)
+
+[node name="Tinkercad GLTF Scene6" parent="Products/Milk/Lite Milk" unique_id=887306026 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -28.184185, 0.3256637, -29.250774)
+
+[node name="Tinkercad GLTF Scene7" parent="Products/Milk/Lite Milk" unique_id=525455110 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -28.19094, 1.4131589, -28.457434)
+
+[node name="Tinkercad GLTF Scene8" parent="Products/Milk/Lite Milk" unique_id=1565798213 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -28.190298, 1.4129908, -28.845417)
+
+[node name="Tinkercad GLTF Scene9" parent="Products/Milk/Lite Milk" unique_id=1808671748 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -28.189625, 1.4128147, -29.251255)
+
+[node name="Tinkercad GLTF Scene10" parent="Products/Milk/Lite Milk" unique_id=1800333710 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -28.196238, 2.4716125, -28.457901)
+
+[node name="Tinkercad GLTF Scene11" parent="Products/Milk/Lite Milk" unique_id=1846162483 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -28.195595, 2.471444, -28.845884)
+
+[node name="Tinkercad GLTF Scene12" parent="Products/Milk/Lite Milk" unique_id=1856600773 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -28.194921, 2.4712677, -29.25172)
+
+[node name="Tinkercad GLTF Scene13" parent="Products/Milk/Lite Milk" unique_id=1494808369 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999546, -0.17514443, -0.057862557, 0.17516975, 34.999588, 0.015190413, 0.05778587, -0.015479795, 34.999947, -27.78684, 0.3280035, -28.456295)
+
+[node name="Tinkercad GLTF Scene14" parent="Products/Milk/Lite Milk" unique_id=709879143 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -27.786198, 0.32783505, -28.844278)
+
+[node name="Tinkercad GLTF Scene15" parent="Products/Milk/Lite Milk" unique_id=16413801 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -27.785524, 0.32765895, -29.250116)
+
+[node name="Tinkercad GLTF Scene16" parent="Products/Milk/Lite Milk" unique_id=1967692953 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -27.792282, 1.4151542, -28.456778)
+
+[node name="Tinkercad GLTF Scene17" parent="Products/Milk/Lite Milk" unique_id=90569320 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -27.79164, 1.4149863, -28.844759)
+
+[node name="Tinkercad GLTF Scene18" parent="Products/Milk/Lite Milk" unique_id=1130467302 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -27.790968, 1.41481, -29.250597)
+
+[node name="Tinkercad GLTF Scene19" parent="Products/Milk/Lite Milk" unique_id=1563803417 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -27.797579, 2.4736078, -28.457243)
+
+[node name="Tinkercad GLTF Scene20" parent="Products/Milk/Lite Milk" unique_id=694583517 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -27.796938, 2.4734395, -28.845226)
+
+[node name="Tinkercad GLTF Scene21" parent="Products/Milk/Lite Milk" unique_id=2128033519 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -27.796263, 2.4732633, -29.25106)
+
+[node name="Tinkercad GLTF Scene22" parent="Products/Milk/Lite Milk" unique_id=1499154772 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -27.358646, 0.33014658, -28.455587)
+
+[node name="Tinkercad GLTF Scene23" parent="Products/Milk/Lite Milk" unique_id=504069232 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -27.358004, 0.3299781, -28.84357)
+
+[node name="Tinkercad GLTF Scene24" parent="Products/Milk/Lite Milk" unique_id=1719422881 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -27.357332, 0.32980204, -29.249409)
+
+[node name="Tinkercad GLTF Scene25" parent="Products/Milk/Lite Milk" unique_id=1571785349 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -27.36409, 1.4172974, -28.45607)
+
+[node name="Tinkercad GLTF Scene26" parent="Products/Milk/Lite Milk" unique_id=1490140035 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -27.363447, 1.4171294, -28.844051)
+
+[node name="Tinkercad GLTF Scene27" parent="Products/Milk/Lite Milk" unique_id=1526751876 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -27.362776, 1.4169531, -29.24989)
+
+[node name="Tinkercad GLTF Scene28" parent="Products/Milk/Lite Milk" unique_id=1846285974 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -27.369387, 2.4757512, -28.45654)
+
+[node name="Tinkercad GLTF Scene29" parent="Products/Milk/Lite Milk" unique_id=970553025 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -27.368746, 2.475583, -28.844522)
+
+[node name="Tinkercad GLTF Scene30" parent="Products/Milk/Lite Milk" unique_id=610597420 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -27.36807, 2.4754066, -29.250355)
+
+[node name="Tinkercad GLTF Scene31" parent="Products/Milk/Lite Milk" unique_id=694404717 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -26.929758, 0.33229318, -28.454882)
+
+[node name="Tinkercad GLTF Scene32" parent="Products/Milk/Lite Milk" unique_id=1251890134 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -26.929117, 0.33212465, -28.842863)
+
+[node name="Tinkercad GLTF Scene33" parent="Products/Milk/Lite Milk" unique_id=436764972 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -26.928444, 0.33194858, -29.248701)
+
+[node name="Tinkercad GLTF Scene34" parent="Products/Milk/Lite Milk" unique_id=2036934387 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -26.935202, 1.4194441, -28.455364)
+
+[node name="Tinkercad GLTF Scene35" parent="Products/Milk/Lite Milk" unique_id=13817676 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -26.93456, 1.4192761, -28.843344)
+
+[node name="Tinkercad GLTF Scene36" parent="Products/Milk/Lite Milk" unique_id=1133836981 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -26.933887, 1.4190998, -29.249182)
+
+[node name="Tinkercad GLTF Scene37" parent="Products/Milk/Lite Milk" unique_id=1467493919 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -26.9405, 2.477898, -28.45583)
+
+[node name="Tinkercad GLTF Scene38" parent="Products/Milk/Lite Milk" unique_id=1053464382 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -26.939857, 2.47773, -28.843813)
+
+[node name="Tinkercad GLTF Scene39" parent="Products/Milk/Lite Milk" unique_id=465351015 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -26.939184, 2.4775534, -29.249643)
+
+[node name="Tinkercad GLTF Scene40" parent="Products/Milk/Lite Milk" unique_id=714750461 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -26.507555, 0.3344063, -28.454185)
+
+[node name="Tinkercad GLTF Scene41" parent="Products/Milk/Lite Milk" unique_id=1247487573 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -26.506916, 0.33423772, -28.842165)
+
+[node name="Tinkercad GLTF Scene42" parent="Products/Milk/Lite Milk" unique_id=572665772 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -26.506239, 0.3340617, -29.248001)
+
+[node name="Tinkercad GLTF Scene43" parent="Products/Milk/Lite Milk" unique_id=1684872080 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -26.513004, 1.4215572, -28.454668)
+
+[node name="Tinkercad GLTF Scene44" parent="Products/Milk/Lite Milk" unique_id=396814007 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -26.51236, 1.4213895, -28.842646)
+
+[node name="Tinkercad GLTF Scene45" parent="Products/Milk/Lite Milk" unique_id=190716076 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -26.51169, 1.4212129, -29.248482)
+
+[node name="Tinkercad GLTF Scene46" parent="Products/Milk/Lite Milk" unique_id=1077551587 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -26.5183, 2.4800117, -28.455135)
+
+[node name="Tinkercad GLTF Scene47" parent="Products/Milk/Lite Milk" unique_id=1062252023 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -26.51766, 2.4798439, -28.843117)
+
+[node name="Tinkercad GLTF Scene48" parent="Products/Milk/Lite Milk" unique_id=2039109754 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -26.516983, 2.479667, -29.248945)
+
+[node name="Tinkercad GLTF Scene49" parent="Products/Milk/Lite Milk" unique_id=299279957 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -26.062836, 0.33663207, -28.453451)
+
+[node name="Tinkercad GLTF Scene50" parent="Products/Milk/Lite Milk" unique_id=1689539432 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -26.062195, 0.33646348, -28.84143)
+
+[node name="Tinkercad GLTF Scene51" parent="Products/Milk/Lite Milk" unique_id=1522555423 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -26.06152, 0.3362875, -29.247265)
+
+[node name="Tinkercad GLTF Scene52" parent="Products/Milk/Lite Milk" unique_id=198494956 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -26.068285, 1.4237831, -28.453938)
+
+[node name="Tinkercad GLTF Scene53" parent="Products/Milk/Lite Milk" unique_id=398615571 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -26.06764, 1.4236153, -28.841915)
+
+[node name="Tinkercad GLTF Scene54" parent="Products/Milk/Lite Milk" unique_id=1547719715 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -26.06697, 1.4234388, -29.24775)
+
+[node name="Tinkercad GLTF Scene55" parent="Products/Milk/Lite Milk" unique_id=316504345 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -26.07358, 2.4822373, -28.454403)
+
+[node name="Tinkercad GLTF Scene56" parent="Products/Milk/Lite Milk" unique_id=1742755603 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -26.07294, 2.4820695, -28.842382)
+
+[node name="Tinkercad GLTF Scene57" parent="Products/Milk/Lite Milk" unique_id=832184018 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -26.072266, 2.4818926, -29.24821)
+
+[node name="Tinkercad GLTF Scene58" parent="Products/Milk/Lite Milk" unique_id=635020128 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -25.624863, 0.3388241, -28.452723)
+
+[node name="Tinkercad GLTF Scene59" parent="Products/Milk/Lite Milk" unique_id=431631853 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -25.624218, 0.33865565, -28.840708)
+
+[node name="Tinkercad GLTF Scene60" parent="Products/Milk/Lite Milk" unique_id=1337600732 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -25.623547, 0.33847952, -29.246542)
+
+[node name="Tinkercad GLTF Scene61" parent="Products/Milk/Lite Milk" unique_id=1808863670 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -25.630302, 1.425975, -28.453205)
+
+[node name="Tinkercad GLTF Scene62" parent="Products/Milk/Lite Milk" unique_id=2016327274 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -25.629663, 1.4258069, -28.841188)
+
+[node name="Tinkercad GLTF Scene63" parent="Products/Milk/Lite Milk" unique_id=1979379886 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -25.628988, 1.4256306, -29.247023)
+
+[node name="Tinkercad GLTF Scene64" parent="Products/Milk/Lite Milk" unique_id=1089488710 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -25.635601, 2.4844282, -28.453678)
+
+[node name="Tinkercad GLTF Scene65" parent="Products/Milk/Lite Milk" unique_id=132040300 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -25.634956, 2.48426, -28.841658)
+
+[node name="Tinkercad GLTF Scene66" parent="Products/Milk/Lite Milk" unique_id=287429557 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -25.634287, 2.4840837, -29.247494)
+
+[node name="Tinkercad GLTF Scene67" parent="Products/Milk/Lite Milk" unique_id=1331146562 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -25.2262, 0.3408194, -28.452066)
+
+[node name="Tinkercad GLTF Scene68" parent="Products/Milk/Lite Milk" unique_id=472463041 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -25.225557, 0.34065092, -28.84005)
+
+[node name="Tinkercad GLTF Scene69" parent="Products/Milk/Lite Milk" unique_id=1111096708 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -25.224886, 0.34047478, -29.245888)
+
+[node name="Tinkercad GLTF Scene70" parent="Products/Milk/Lite Milk" unique_id=1094468971 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -25.231646, 1.4279699, -28.452549)
+
+[node name="Tinkercad GLTF Scene71" parent="Products/Milk/Lite Milk" unique_id=2036815005 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -25.231, 1.4278024, -28.84053)
+
+[node name="Tinkercad GLTF Scene72" parent="Products/Milk/Lite Milk" unique_id=496514355 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -25.230331, 1.4276261, -29.246365)
+
+[node name="Tinkercad GLTF Scene73" parent="Products/Milk/Lite Milk" unique_id=1962815077 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -25.236942, 2.4864237, -28.45302)
+
+[node name="Tinkercad GLTF Scene74" parent="Products/Milk/Lite Milk" unique_id=459651290 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -25.236301, 2.4862554, -28.841)
+
+[node name="Tinkercad GLTF Scene75" parent="Products/Milk/Lite Milk" unique_id=1375451648 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -25.235624, 2.4860792, -29.246834)
+
+[node name="Tinkercad GLTF Scene76" parent="Products/Milk/Lite Milk" unique_id=1689767782 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -24.798008, 0.3429624, -28.451365)
+
+[node name="Tinkercad GLTF Scene77" parent="Products/Milk/Lite Milk" unique_id=184048557 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -24.797365, 0.3427939, -28.839348)
+
+[node name="Tinkercad GLTF Scene78" parent="Products/Milk/Lite Milk" unique_id=698806905 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -24.796694, 0.3426178, -29.245182)
+
+[node name="Tinkercad GLTF Scene79" parent="Products/Milk/Lite Milk" unique_id=1460405253 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -24.803452, 1.4301132, -28.451847)
+
+[node name="Tinkercad GLTF Scene80" parent="Products/Milk/Lite Milk" unique_id=341329459 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -24.802813, 1.4299453, -28.839825)
+
+[node name="Tinkercad GLTF Scene81" parent="Products/Milk/Lite Milk" unique_id=500252604 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -24.802137, 1.429769, -29.245663)
+
+[node name="Tinkercad GLTF Scene82" parent="Products/Milk/Lite Milk" unique_id=1293412621 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -24.80875, 2.488567, -28.45231)
+
+[node name="Tinkercad GLTF Scene83" parent="Products/Milk/Lite Milk" unique_id=1408047532 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -24.808107, 2.4883995, -28.840294)
+
+[node name="Tinkercad GLTF Scene84" parent="Products/Milk/Lite Milk" unique_id=1863811167 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -24.807436, 2.4882226, -29.246126)
+
+[node name="Tinkercad GLTF Scene85" parent="Products/Milk/Lite Milk" unique_id=871245893 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -24.369116, 0.34510902, -28.450653)
+
+[node name="Tinkercad GLTF Scene86" parent="Products/Milk/Lite Milk" unique_id=461854565 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -24.368479, 0.34494042, -28.838634)
+
+[node name="Tinkercad GLTF Scene87" parent="Products/Milk/Lite Milk" unique_id=442958940 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -24.367802, 0.3447644, -29.244469)
+
+[node name="Tinkercad GLTF Scene88" parent="Products/Milk/Lite Milk" unique_id=1809152853 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -24.374565, 1.4322598, -28.451136)
+
+[node name="Tinkercad GLTF Scene89" parent="Products/Milk/Lite Milk" unique_id=249607958 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -24.373922, 1.4320921, -28.839115)
+
+[node name="Tinkercad GLTF Scene90" parent="Products/Milk/Lite Milk" unique_id=1120082022 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -24.373251, 1.4319156, -29.24495)
+
+[node name="Tinkercad GLTF Scene91" parent="Products/Milk/Lite Milk" unique_id=364769918 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -24.37986, 2.4907136, -28.451607)
+
+[node name="Tinkercad GLTF Scene92" parent="Products/Milk/Lite Milk" unique_id=929653878 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -24.379221, 2.4905462, -28.839586)
+
+[node name="Tinkercad GLTF Scene93" parent="Products/Milk/Lite Milk" unique_id=146410414 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -24.378544, 2.4903696, -29.245417)
+
+[node name="Tinkercad GLTF Scene94" parent="Products/Milk/Lite Milk" unique_id=655856955 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -23.946915, 0.34722215, -28.449963)
+
+[node name="Tinkercad GLTF Scene95" parent="Products/Milk/Lite Milk" unique_id=1931706449 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -23.946274, 0.34705353, -28.837938)
+
+[node name="Tinkercad GLTF Scene96" parent="Products/Milk/Lite Milk" unique_id=26420060 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -23.945599, 0.34687752, -29.243774)
+
+[node name="Tinkercad GLTF Scene97" parent="Products/Milk/Lite Milk" unique_id=573762963 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -23.952366, 1.4343731, -28.450445)
+
+[node name="Tinkercad GLTF Scene98" parent="Products/Milk/Lite Milk" unique_id=967831731 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -23.951725, 1.4342054, -28.838419)
+
+[node name="Tinkercad GLTF Scene99" parent="Products/Milk/Lite Milk" unique_id=1261139662 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -23.951052, 1.4340289, -29.244255)
+
+[node name="Tinkercad GLTF Scene100" parent="Products/Milk/Lite Milk" unique_id=362010351 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -23.95766, 2.492828, -28.450907)
+
+[node name="Tinkercad GLTF Scene101" parent="Products/Milk/Lite Milk" unique_id=619083311 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -23.957022, 2.49266, -28.838888)
+
+[node name="Tinkercad GLTF Scene102" parent="Products/Milk/Lite Milk" unique_id=2054814499 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -23.956347, 2.492483, -29.244713)
+
+[node name="Tinkercad GLTF Scene103" parent="Products/Milk/Lite Milk" unique_id=371425778 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -23.5022, 0.34944794, -28.449228)
+
+[node name="Tinkercad GLTF Scene104" parent="Products/Milk/Lite Milk" unique_id=936890281 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -23.501558, 0.34927928, -28.837204)
+
+[node name="Tinkercad GLTF Scene105" parent="Products/Milk/Lite Milk" unique_id=885826836 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -23.500883, 0.3491033, -29.243038)
+
+[node name="Tinkercad GLTF Scene106" parent="Products/Milk/Lite Milk" unique_id=2030427401 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -23.507648, 1.4365989, -28.449713)
+
+[node name="Tinkercad GLTF Scene107" parent="Products/Milk/Lite Milk" unique_id=951472240 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -23.507008, 1.4364313, -28.837687)
+
+[node name="Tinkercad GLTF Scene108" parent="Products/Milk/Lite Milk" unique_id=661887980 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -23.506334, 1.4362546, -29.24352)
+
+[node name="Tinkercad GLTF Scene109" parent="Products/Milk/Lite Milk" unique_id=1404364696 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -23.512947, 2.495054, -28.450174)
+
+[node name="Tinkercad GLTF Scene110" parent="Products/Milk/Lite Milk" unique_id=1948941445 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99959, -0.17514458, -0.057862557, 0.17516989, 34.999634, 0.015190424, 0.05778595, -0.015479806, 34.999947, -23.512306, 2.494886, -28.838154)
+
+[node name="Tinkercad GLTF Scene111" parent="Products/Milk/Lite Milk" unique_id=938662465 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99959, -0.17514458, -0.057862557, 0.17516989, 34.999634, 0.015190424, 0.05778595, -0.015479806, 34.999947, -23.511633, 2.494709, -29.243979)
+
+[node name="Tinkercad GLTF Scene112" parent="Products/Milk/Lite Milk" unique_id=1463168367 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -23.009302, 0.35191476, -28.448404)
+
+[node name="Tinkercad GLTF Scene113" parent="Products/Milk/Lite Milk" unique_id=2018798899 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -23.008657, 0.35174632, -28.83639)
+
+[node name="Tinkercad GLTF Scene114" parent="Products/Milk/Lite Milk" unique_id=1352215320 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -23.007984, 0.3515702, -29.242224)
+
+[node name="Tinkercad GLTF Scene115" parent="Products/Milk/Lite Milk" unique_id=605071806 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -23.014744, 1.4390657, -28.448887)
+
+[node name="Tinkercad GLTF Scene116" parent="Products/Milk/Lite Milk" unique_id=598416307 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -23.014103, 1.4388976, -28.83687)
+
+[node name="Tinkercad GLTF Scene117" parent="Products/Milk/Lite Milk" unique_id=1224804421 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -23.01343, 1.4387213, -29.242702)
+
+[node name="Tinkercad GLTF Scene118" parent="Products/Milk/Lite Milk" unique_id=300084674 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -23.020042, 2.4975195, -28.449362)
+
+[node name="Tinkercad GLTF Scene119" parent="Products/Milk/Lite Milk" unique_id=353468878 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -23.019398, 2.4973512, -28.83734)
+
+[node name="Tinkercad GLTF Scene120" parent="Products/Milk/Lite Milk" unique_id=1049910603 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -23.018726, 2.4971745, -29.243176)
+
+[node name="Tinkercad GLTF Scene121" parent="Products/Milk/Lite Milk" unique_id=1896391178 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -22.61064, 0.35391006, -28.447748)
+
+[node name="Tinkercad GLTF Scene122" parent="Products/Milk/Lite Milk" unique_id=1510355979 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -22.609997, 0.3537416, -28.835732)
+
+[node name="Tinkercad GLTF Scene123" parent="Products/Milk/Lite Milk" unique_id=852802962 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -22.609325, 0.35356545, -29.24157)
+
+[node name="Tinkercad GLTF Scene124" parent="Products/Milk/Lite Milk" unique_id=32100345 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -22.616087, 1.4410607, -28.44823)
+
+[node name="Tinkercad GLTF Scene125" parent="Products/Milk/Lite Milk" unique_id=2126259272 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -22.615442, 1.4408932, -28.836212)
+
+[node name="Tinkercad GLTF Scene126" parent="Products/Milk/Lite Milk" unique_id=1223605771 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -22.614773, 1.4407169, -29.242046)
+
+[node name="Tinkercad GLTF Scene127" parent="Products/Milk/Lite Milk" unique_id=1424770820 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -22.621382, 2.4995146, -28.448704)
+
+[node name="Tinkercad GLTF Scene128" parent="Products/Milk/Lite Milk" unique_id=1280221008 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -22.620743, 2.4993463, -28.836681)
+
+[node name="Tinkercad GLTF Scene129" parent="Products/Milk/Lite Milk" unique_id=1752921205 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -22.620066, 2.4991703, -29.242516)
+
+[node name="Tinkercad GLTF Scene130" parent="Products/Milk/Lite Milk" unique_id=2097252724 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -22.182447, 0.35605308, -28.447044)
+
+[node name="Tinkercad GLTF Scene131" parent="Products/Milk/Lite Milk" unique_id=1156392865 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -22.181805, 0.35588455, -28.835028)
+
+[node name="Tinkercad GLTF Scene132" parent="Products/Milk/Lite Milk" unique_id=423806940 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -22.181133, 0.3557085, -29.24086)
+
+[node name="Tinkercad GLTF Scene133" parent="Products/Milk/Lite Milk" unique_id=997827913 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -22.187891, 1.4432038, -28.44753)
+
+[node name="Tinkercad GLTF Scene134" parent="Products/Milk/Lite Milk" unique_id=212334227 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -22.187252, 1.443036, -28.835508)
+
+[node name="Tinkercad GLTF Scene135" parent="Products/Milk/Lite Milk" unique_id=1302243351 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -22.186579, 1.4428596, -29.241344)
+
+[node name="Tinkercad GLTF Scene136" parent="Products/Milk/Lite Milk" unique_id=884476121 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -22.193192, 2.5016577, -28.447994)
+
+[node name="Tinkercad GLTF Scene137" parent="Products/Milk/Lite Milk" unique_id=1665741350 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -22.192549, 2.50149, -28.835976)
+
+[node name="Tinkercad GLTF Scene138" parent="Products/Milk/Lite Milk" unique_id=1729047952 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -22.191877, 2.5013132, -29.241808)
+
+[node name="Tinkercad GLTF Scene139" parent="Products/Milk/Lite Milk" unique_id=817639778 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -21.753555, 0.3581997, -28.446335)
+
+[node name="Tinkercad GLTF Scene140" parent="Products/Milk/Lite Milk" unique_id=249832362 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -21.75292, 0.3580311, -28.834316)
+
+[node name="Tinkercad GLTF Scene141" parent="Products/Milk/Lite Milk" unique_id=2053696317 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -21.752243, 0.35785508, -29.24015)
+
+[node name="Tinkercad GLTF Scene142" parent="Products/Milk/Lite Milk" unique_id=300752781 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -21.759007, 1.4453506, -28.446817)
+
+[node name="Tinkercad GLTF Scene143" parent="Products/Milk/Lite Milk" unique_id=1485443583 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -21.758366, 1.445183, -28.834797)
+
+[node name="Tinkercad GLTF Scene144" parent="Products/Milk/Lite Milk" unique_id=1078752198 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -21.757692, 1.4450065, -29.24063)
+
+[node name="Tinkercad GLTF Scene145" parent="Products/Milk/Lite Milk" unique_id=1811726442 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -21.764301, 2.5038042, -28.44729)
+
+[node name="Tinkercad GLTF Scene146" parent="Products/Milk/Lite Milk" unique_id=409424937 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -21.763664, 2.503637, -28.835268)
+
+[node name="Tinkercad GLTF Scene147" parent="Products/Milk/Lite Milk" unique_id=584480911 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -21.762985, 2.5034602, -29.241098)
+
+[node name="Tinkercad GLTF Scene148" parent="Products/Milk/Lite Milk" unique_id=1672782247 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -21.331356, 0.3603128, -28.445646)
+
+[node name="Tinkercad GLTF Scene149" parent="Products/Milk/Lite Milk" unique_id=1900876639 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -21.330715, 0.3601442, -28.83362)
+
+[node name="Tinkercad GLTF Scene150" parent="Products/Milk/Lite Milk" unique_id=330773370 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -21.330038, 0.3599682, -29.239456)
+
+[node name="Tinkercad GLTF Scene151" parent="Products/Milk/Lite Milk" unique_id=24396030 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -21.336807, 1.4474639, -28.446129)
+
+[node name="Tinkercad GLTF Scene152" parent="Products/Milk/Lite Milk" unique_id=1927737679 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -21.336166, 1.4472961, -28.8341)
+
+[node name="Tinkercad GLTF Scene153" parent="Products/Milk/Lite Milk" unique_id=537549949 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -21.335493, 1.4471197, -29.239937)
+
+[node name="Tinkercad GLTF Scene154" parent="Products/Milk/Lite Milk" unique_id=929322277 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -21.342104, 2.5059185, -28.446589)
+
+[node name="Tinkercad GLTF Scene155" parent="Products/Milk/Lite Milk" unique_id=1539584877 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99959, -0.17514458, -0.057862557, 0.17516989, 34.999634, 0.015190424, 0.05778595, -0.015479806, 34.999947, -21.341463, 2.5057507, -28.83457)
+
+[node name="Tinkercad GLTF Scene156" parent="Products/Milk/Lite Milk" unique_id=317985517 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99959, -0.17514458, -0.057862557, 0.17516989, 34.999634, 0.015190424, 0.05778595, -0.015479806, 34.999947, -21.340788, 2.5055735, -29.240393)
+
+[node name="Tinkercad GLTF Scene157" parent="Products/Milk/Lite Milk" unique_id=1297306296 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -20.88664, 0.3625386, -28.444912)
+
+[node name="Tinkercad GLTF Scene158" parent="Products/Milk/Lite Milk" unique_id=279925541 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -20.886, 0.36236995, -28.832886)
+
+[node name="Tinkercad GLTF Scene159" parent="Products/Milk/Lite Milk" unique_id=120966191 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -20.885324, 0.36219394, -29.23872)
+
+[node name="Tinkercad GLTF Scene160" parent="Products/Milk/Lite Milk" unique_id=2038879009 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -20.892092, 1.4496897, -28.445396)
+
+[node name="Tinkercad GLTF Scene161" parent="Products/Milk/Lite Milk" unique_id=2036466386 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99959, -0.17514458, -0.057862557, 0.17516989, 34.999634, 0.015190424, 0.05778595, -0.015479806, 34.999947, -20.891449, 1.4495221, -28.833368)
+
+[node name="Tinkercad GLTF Scene162" parent="Products/Milk/Lite Milk" unique_id=93448100 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.99959, -0.17514458, -0.057862557, 0.17516989, 34.999634, 0.015190424, 0.05778595, -0.015479806, 34.999947, -20.890778, 1.4493454, -29.239202)
+
+[node name="Tinkercad GLTF Scene163" parent="Products/Milk/Lite Milk" unique_id=1597871821 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -20.89739, 2.5081449, -28.445856)
+
+[node name="Tinkercad GLTF Scene164" parent="Products/Milk/Lite Milk" unique_id=915477810 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999596, -0.1751446, -0.057862557, 0.1751699, 34.999638, 0.015190425, 0.057785958, -0.015479807, 34.999947, -20.89675, 2.5079768, -28.833836)
+
+[node name="Tinkercad GLTF Scene165" parent="Products/Milk/Lite Milk" unique_id=177262409 instance=ExtResource("13_hby33")]
+transform = Transform3D(34.999596, -0.1751446, -0.057862557, 0.1751699, 34.999638, 0.015190425, 0.057785958, -0.015479807, 34.999947, -20.896076, 2.5077999, -29.239658)
+
+[node name="Banan Milk" type="Node3D" parent="Products/Milk" unique_id=493828237]
+transform = Transform3D(1, 7.071321e-11, -2.3283064e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 8.585145, 0.042967945, 0.014174473)
+
+[node name="Tinkercad GLTF Scene" parent="Products/Milk/Banan Milk" unique_id=1301606053 instance=ExtResource("14_e3s4u")]
+transform = Transform3D(34.99953, -0.17514434, -0.057862554, 0.17516969, 34.999573, 0.015190411, 0.057785835, -0.015479797, 34.999947, -30.759483, 0.2971303, -28.937904)
+
+[node name="Tinkercad GLTF Scene2" parent="Products/Milk/Banan Milk" unique_id=1092837725 instance=ExtResource("14_e3s4u")]
+transform = Transform3D(34.99954, -0.17514437, -0.057862554, 0.1751697, 34.99958, 0.015190413, 0.05778585, -0.015479799, 34.999947, -30.758825, 0.29695705, -29.337069)
+
+[node name="Tinkercad GLTF Scene3" parent="Products/Milk/Banan Milk" unique_id=1737016748 instance=ExtResource("14_e3s4u")]
+transform = Transform3D(34.999542, -0.17514439, -0.057862554, 0.17516972, 34.999584, 0.015190414, 0.057785854, -0.015479799, 34.999947, -30.758125, 0.2967735, -29.760015)
+
+[node name="Value Trim Milk" type="Node3D" parent="Products/Milk" unique_id=1153382706]
+transform = Transform3D(1, 7.071321e-11, -1.1641532e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 0.744, 0.008, -0.019)
+
+[node name="Tinkercad GLTF Scene" parent="Products/Milk/Value Trim Milk" unique_id=177278262 instance=ExtResource("15_qqas2")]
+transform = Transform3D(34.99954, -0.1751444, -0.057862557, 0.17516974, 34.99958, 0.015190411, 0.057785857, -0.015479794, 34.999947, -30.712147, 0.2896964, -28.466915)
+
+[node name="Tinkercad GLTF Scene2" parent="Products/Milk/Value Trim Milk" unique_id=1761165602 instance=ExtResource("15_qqas2")]
+transform = Transform3D(34.999542, -0.17514442, -0.057862557, 0.17516975, 34.999584, 0.015190412, 0.05778586, -0.015479794, 34.999947, -30.71144, 0.28951123, -28.89365)
+
+[node name="Tinkercad GLTF Scene3" parent="Products/Milk/Value Trim Milk" unique_id=1071262024 instance=ExtResource("15_qqas2")]
+transform = Transform3D(34.999546, -0.17514443, -0.057862557, 0.17516975, 34.999588, 0.015190413, 0.05778587, -0.015479795, 34.999947, -30.71072, 0.28932288, -29.327568)
+
+[node name="Strawber Milk" type="Node3D" parent="Products/Milk" unique_id=2070180384]
+transform = Transform3D(1, 7.071321e-11, -3.4924597e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 11.630303, 1.182248, 0.018714322)
+
+[node name="Tinkercad GLTF Scene" parent="Products/Milk/Strawber Milk" unique_id=615587548 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999535, -0.17514439, -0.057862557, 0.17516972, 34.999577, 0.01519041, 0.05778585, -0.015479793, 34.999947, -31.209461, 0.2724788, -28.935246)
+
+[node name="Tinkercad GLTF Scene2" parent="Products/Milk/Strawber Milk" unique_id=1262852916 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999542, -0.17514442, -0.057862557, 0.17516975, 34.999584, 0.015190412, 0.05778586, -0.015479794, 34.999947, -31.208767, 0.2722969, -29.354422)
+
+[node name="Tinkercad GLTF Scene3" parent="Products/Milk/Strawber Milk" unique_id=717657141 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999546, -0.17514443, -0.057862557, 0.17516975, 34.999588, 0.015190413, 0.05778587, -0.015479795, 34.999947, -31.208044, 0.27210724, -29.791391)
+
+[node name="Tinkercad GLTF Scene4" parent="Products/Milk/Strawber Milk" unique_id=119723694 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999542, -0.17514442, -0.057862557, 0.17516975, 34.999584, 0.015190412, 0.05778586, -0.015479794, 34.999947, -31.630636, 0.2703709, -28.935938)
+
+[node name="Tinkercad GLTF Scene5" parent="Products/Milk/Strawber Milk" unique_id=297943678 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -31.629944, 0.270189, -29.355118)
+
+[node name="Tinkercad GLTF Scene6" parent="Products/Milk/Strawber Milk" unique_id=526467179 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -31.62922, 0.2699993, -29.792091)
+
+[node name="Tinkercad GLTF Scene7" parent="Products/Milk/Strawber Milk" unique_id=1383530600 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.99954, -0.1751444, -0.057862557, 0.17516974, 34.99958, 0.015190411, 0.057785857, -0.015479794, 34.999947, -32.09017, 0.26807088, -28.936699)
+
+[node name="Tinkercad GLTF Scene8" parent="Products/Milk/Strawber Milk" unique_id=190652013 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999546, -0.17514443, -0.057862557, 0.17516975, 34.999588, 0.015190413, 0.05778587, -0.015479795, 34.999947, -32.08948, 0.267889, -29.355875)
+
+[node name="Tinkercad GLTF Scene9" parent="Products/Milk/Strawber Milk" unique_id=1714855246 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -32.088757, 0.26769933, -29.792847)
+
+[node name="Tinkercad GLTF Scene10" parent="Products/Milk/Strawber Milk" unique_id=771506749 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999546, -0.17514443, -0.057862557, 0.17516975, 34.999588, 0.015190413, 0.05778587, -0.015479795, 34.999947, -32.511345, 0.26596302, -28.93739)
+
+[node name="Tinkercad GLTF Scene11" parent="Products/Milk/Strawber Milk" unique_id=827000729 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -32.510654, 0.2657811, -29.356571)
+
+[node name="Tinkercad GLTF Scene12" parent="Products/Milk/Strawber Milk" unique_id=488064040 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -32.50993, 0.2655914, -29.793547)
+
+[node name="Tinkercad GLTF Scene13" parent="Products/Milk/Strawber Milk" unique_id=1868665695 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999546, -0.17514443, -0.057862557, 0.17516975, 34.999588, 0.015190413, 0.05778587, -0.015479795, 34.999947, -32.95161, 0.26375946, -28.938118)
+
+[node name="Tinkercad GLTF Scene14" parent="Products/Milk/Strawber Milk" unique_id=1688187787 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -32.950924, 0.2635776, -29.357296)
+
+[node name="Tinkercad GLTF Scene15" parent="Products/Milk/Strawber Milk" unique_id=818144824 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -32.95019, 0.26338792, -29.794271)
+
+[node name="Tinkercad GLTF Scene16" parent="Products/Milk/Strawber Milk" unique_id=2038480178 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -33.372784, 0.26165158, -28.938808)
+
+[node name="Tinkercad GLTF Scene17" parent="Products/Milk/Strawber Milk" unique_id=729915007 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -33.372097, 0.26146963, -29.357994)
+
+[node name="Tinkercad GLTF Scene18" parent="Products/Milk/Strawber Milk" unique_id=2075593827 instance=ExtResource("16_rncil")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -33.37137, 0.26127997, -29.79497)
+
+[node name="Full Milk" type="Node3D" parent="Products/Milk" unique_id=1657494309]
+transform = Transform3D(1, 7.071321e-11, -1.1641532e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Tinkercad GLTF Scene" parent="Products/Milk/Full Milk" unique_id=155135183 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99956, -0.17514448, -0.057862557, 0.1751698, 34.999603, 0.015190417, 0.0577859, -0.0154797975, 34.999947, -29.154055, 1.3845384, -28.48503)
+
+[node name="Tinkercad GLTF Scene2" parent="Products/Milk/Full Milk" unique_id=2079212070 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -29.15342, 1.3843725, -28.867117)
+
+[node name="Tinkercad GLTF Scene3" parent="Products/Milk/Full Milk" unique_id=1971587322 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -29.152733, 1.3841926, -29.281301)
+
+[node name="Tinkercad GLTF Scene4" parent="Products/Milk/Full Milk" unique_id=212856913 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -29.561813, 1.3824974, -28.485703)
+
+[node name="Tinkercad GLTF Scene5" parent="Products/Milk/Full Milk" unique_id=1948726900 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -29.561176, 1.3823317, -28.867788)
+
+[node name="Tinkercad GLTF Scene6" parent="Products/Milk/Full Milk" unique_id=1954525758 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -29.56049, 1.3821517, -29.281975)
+
+[node name="Tinkercad GLTF Scene7" parent="Products/Milk/Full Milk" unique_id=1831544406 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -29.965454, 1.3804771, -28.48637)
+
+[node name="Tinkercad GLTF Scene8" parent="Products/Milk/Full Milk" unique_id=1682368876 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -29.964817, 1.3803114, -28.868454)
+
+[node name="Tinkercad GLTF Scene9" parent="Products/Milk/Full Milk" unique_id=924444720 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -29.96413, 1.3801315, -29.282642)
+
+[node name="Tinkercad GLTF Scene10" parent="Products/Milk/Full Milk" unique_id=739299803 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -30.409908, 1.3782529, -28.487103)
+
+[node name="Tinkercad GLTF Scene11" parent="Products/Milk/Full Milk" unique_id=1849097983 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -30.409271, 1.378087, -28.869188)
+
+[node name="Tinkercad GLTF Scene12" parent="Products/Milk/Full Milk" unique_id=278080163 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -30.408585, 1.377907, -29.283375)
+
+[node name="Tinkercad GLTF Scene13" parent="Products/Milk/Full Milk" unique_id=1724653106 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -30.817665, 1.3762118, -28.487776)
+
+[node name="Tinkercad GLTF Scene14" parent="Products/Milk/Full Milk" unique_id=647353882 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -30.817028, 1.3760462, -28.86986)
+
+[node name="Tinkercad GLTF Scene15" parent="Products/Milk/Full Milk" unique_id=638135760 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -30.816341, 1.3758663, -29.284048)
+
+[node name="Tinkercad GLTF Scene16" parent="Products/Milk/Full Milk" unique_id=1645274849 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -31.221308, 1.3741916, -28.488445)
+
+[node name="Tinkercad GLTF Scene17" parent="Products/Milk/Full Milk" unique_id=580965632 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -31.220669, 1.374026, -28.870527)
+
+[node name="Tinkercad GLTF Scene18" parent="Products/Milk/Full Milk" unique_id=728231889 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -31.219982, 1.3738459, -29.284716)
+
+[node name="Tinkercad GLTF Scene19" parent="Products/Milk/Full Milk" unique_id=1890234590 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999565, -0.1751445, -0.057862557, 0.17516981, 34.999607, 0.015190418, 0.057785906, -0.015479798, 34.999947, -29.159433, 2.4591525, -28.485504)
+
+[node name="Tinkercad GLTF Scene20" parent="Products/Milk/Full Milk" unique_id=1888418950 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -29.158796, 2.4589865, -28.86759)
+
+[node name="Tinkercad GLTF Scene21" parent="Products/Milk/Full Milk" unique_id=94108950 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -29.15811, 2.4588068, -29.281776)
+
+[node name="Tinkercad GLTF Scene22" parent="Products/Milk/Full Milk" unique_id=833176378 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -29.56719, 2.4571116, -28.486177)
+
+[node name="Tinkercad GLTF Scene23" parent="Products/Milk/Full Milk" unique_id=1042105104 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -29.566553, 2.4569457, -28.868261)
+
+[node name="Tinkercad GLTF Scene24" parent="Products/Milk/Full Milk" unique_id=1202240939 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -29.565866, 2.456766, -29.28245)
+
+[node name="Tinkercad GLTF Scene25" parent="Products/Milk/Full Milk" unique_id=2145227555 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -29.970835, 2.4550915, -28.486847)
+
+[node name="Tinkercad GLTF Scene26" parent="Products/Milk/Full Milk" unique_id=2113280905 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -29.970196, 2.4549255, -28.868929)
+
+[node name="Tinkercad GLTF Scene27" parent="Products/Milk/Full Milk" unique_id=2054151842 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -29.96951, 2.4547455, -29.283117)
+
+[node name="Tinkercad GLTF Scene28" parent="Products/Milk/Full Milk" unique_id=1449822404 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99957, -0.17514451, -0.057862557, 0.17516983, 34.99961, 0.015190419, 0.057785913, -0.015479799, 34.999947, -30.415287, 2.452867, -28.48758)
+
+[node name="Tinkercad GLTF Scene29" parent="Products/Milk/Full Milk" unique_id=1910088751 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -30.414648, 2.452701, -28.869663)
+
+[node name="Tinkercad GLTF Scene30" parent="Products/Milk/Full Milk" unique_id=778356635 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -30.413961, 2.452521, -29.28385)
+
+[node name="Tinkercad GLTF Scene31" parent="Products/Milk/Full Milk" unique_id=1850120324 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999573, -0.17514452, -0.057862557, 0.17516983, 34.999615, 0.01519042, 0.05778592, -0.0154798, 34.999947, -30.823044, 2.450826, -28.48825)
+
+[node name="Tinkercad GLTF Scene32" parent="Products/Milk/Full Milk" unique_id=1542231244 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.99958, -0.17514455, -0.057862557, 0.17516986, 34.999622, 0.015190422, 0.057785932, -0.015479803, 34.999947, -30.822405, 2.4506602, -28.870333)
+
+[node name="Tinkercad GLTF Scene33" parent="Products/Milk/Full Milk" unique_id=1675223279 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -30.82172, 2.4504805, -29.284523)
+
+[node name="Tinkercad GLTF Scene34" parent="Products/Milk/Full Milk" unique_id=1574998752 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999577, -0.17514454, -0.057862557, 0.17516984, 34.99962, 0.015190421, 0.05778593, -0.015479801, 34.999947, -31.226686, 2.448806, -28.488922)
+
+[node name="Tinkercad GLTF Scene35" parent="Products/Milk/Full Milk" unique_id=1081936501 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999584, -0.17514455, -0.057862557, 0.17516987, 34.999626, 0.015190423, 0.05778594, -0.015479804, 34.999947, -31.226048, 2.44864, -28.871)
+
+[node name="Tinkercad GLTF Scene36" parent="Products/Milk/Full Milk" unique_id=127887670 instance=ExtResource("18_2tk4m")]
+transform = Transform3D(34.999588, -0.17514457, -0.057862557, 0.17516987, 34.99963, 0.0151904235, 0.057785947, -0.015479805, 34.999947, -31.225359, 2.4484599, -29.28519)
+
+[node name="silver top milk" type="Node3D" parent="Products/Milk" unique_id=1327808624]
+transform = Transform3D(1, 7.071321e-11, -1.1641532e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Tinkercad GLTF Scene" parent="Products/Milk/silver top milk" unique_id=1138114809 instance=ExtResource("18_e3s4u")]
+transform = Transform3D(34.99955, -0.17514445, -0.057862557, 0.17516977, 34.99959, 0.015190414, 0.057785876, -0.015479796, 34.999947, -29.929852, 0.28360406, -28.959198)
+
+[node name="Tinkercad GLTF Scene2" parent="Products/Milk/silver top milk" unique_id=112783028 instance=ExtResource("18_e3s4u")]
+transform = Transform3D(34.999554, -0.17514446, -0.057862557, 0.17516978, 34.999596, 0.015190415, 0.057785884, -0.015479797, 34.999947, -29.929192, 0.2834309, -29.358295)
+
+[node name="Tinkercad GLTF Scene3" parent="Products/Milk/silver top milk" unique_id=1305695045 instance=ExtResource("18_e3s4u")]
+transform = Transform3D(34.999557, -0.17514446, -0.057862557, 0.1751698, 34.9996, 0.015190416, 0.05778589, -0.0154797975, 34.999947, -29.92847, 0.28324214, -29.79344)
+
+[node name="NPC\'s" type="Node3D" parent="." unique_id=504908625]
+
+[node name="Person" parent="NPC\'s" unique_id=1564634097 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, -27.259184, 1.2543459, 24.42246)
+
+[node name="Person2" parent="NPC\'s" unique_id=1323019048 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999996, -2.0065727e-10, -6.9849193e-10, 7.6738615e-10, 1.5, -4.4878107e-08, 2.3283064e-10, 4.4703484e-08, 1.5, 3.3746967, 1.403865, -1.0835832)
+
+[node name="Person3" parent="NPC\'s" unique_id=1416007929 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, -23.308935, 1.2549243, -18.962969)
+
+[node name="Person4" parent="NPC\'s" unique_id=1575351210 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999995, -2.0065727e-10, -9.313226e-10, 7.6749984e-10, 1.5, -4.4936314e-08, 4.656613e-10, 4.4703484e-08, 1.5, 7.0000463, 1.4084902, -31.64441)
+
+[node name="Person5" parent="NPC\'s" unique_id=1978365541 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999994, -2.0065727e-10, -1.1641532e-09, 1.2333885e-09, 1.5, -4.4994522e-08, 6.9849193e-10, 4.4703484e-08, 1.5, -24.092546, 1.2579254, -3.3111186)
+
+[node name="Person14" parent="NPC\'s" unique_id=626825411 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999994, -2.0065727e-10, -1.1641532e-09, 1.2333885e-09, 1.5, -4.4994522e-08, 6.9849193e-10, 4.4703484e-08, 1.5, -34.554176, 1.2105752, -8.966971)
+
+[node name="Person15" parent="NPC\'s" unique_id=645476414 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999993, -2.0065727e-10, -1.3969839e-09, 1.2336159e-09, 1.5, -4.505273e-08, 9.313226e-10, 4.4703484e-08, 1.5, -15.597206, 1.3037807, 4.246152)
+
+[node name="Person16" parent="NPC\'s" unique_id=1615136395 instance=ExtResource("8_hokwi")]
+transform = Transform3D(1.4999993, -2.0065727e-10, -1.3969839e-09, 1.2336159e-09, 1.5, -4.505273e-08, 9.313226e-10, 4.4703484e-08, 1.5, -15.239464, 1.3055722, -12.715973)
