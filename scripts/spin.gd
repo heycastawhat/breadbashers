@@ -30,8 +30,23 @@ var _combined := false
 
 
 func _ready() -> void:
+	_cache_nodes()
+	initialize_pickup()
+
+
+func initialize_pickup() -> void:
+	_cache_nodes()
 	_start_y = position.y
 	_set_world_collision(true)
+	set_process(true)
+
+
+func _cache_nodes() -> void:
+	pivot = get_node_or_null(^"SpinPivot") as Node3D
+	visual = _get_visual_node()
+	pickup_area = get_node_or_null(pickup_area_path) as Area3D
+	collision_body = get_node_or_null(collision_body_path) as StaticBody3D
+	collision_shape = get_node_or_null(collision_shape_path) as CollisionShape3D
 
 
 func _process(delta: float) -> void:
@@ -39,8 +54,6 @@ func _process(delta: float) -> void:
 		return
 
 	_time += delta
-	if visual != null:
-		visual.rotate_y(deg_to_rad(spin_speed) * delta)
 
 	if _falling:
 		_apply_drop_gravity(delta)
@@ -52,10 +65,11 @@ func _process(delta: float) -> void:
 	var player := get_tree().get_first_node_in_group("player")
 	if player and _is_player_close(player) and interact_pressed and not _interact_was_pressed:
 		if player.has_method("add_item"):
-			_combined = true
-			player.add_item(item_id, 1)
-			queue_free()
-			return
+			var pickup_accepted = player.add_item(item_id, 1)
+			if pickup_accepted != false:
+				_combined = true
+				queue_free()
+				return
 
 	_interact_was_pressed = interact_pressed
 
