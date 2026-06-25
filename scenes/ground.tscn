@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://yc6gflxfwpja" path="res://rawmodels/lime Milk.glb" id="23_ccofn"]
 [ext_resource type="PackedScene" uid="uid://xvi13e4agm8s" path="res://rawmodels/peepsi cola.glb" id="24_3i4li"]
 [ext_resource type="PackedScene" uid="uid://do6roey2mywbn" path="res://rawmodels/coke cola.glb" id="25_dnkg1"]
-[ext_resource type="Script" path="res://scripts/milk_pickups.gd" id="26_hby33"]
+[ext_resource type="Script" uid="uid://bbfkhssggantf" path="res://scripts/milk_pickups.gd" id="26_hby33"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lv0v5"]
 albedo_color = Color(0.28155392, 0.28155392, 0.26904383, 1)
@@ -79,7 +79,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -96,7 +95,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -113,7 +111,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -130,7 +127,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 64.76393
 
@@ -147,7 +143,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -164,7 +159,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -181,7 +175,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -198,7 +191,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 55.394905
 
@@ -215,7 +207,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 55.394905
 
@@ -232,7 +223,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -249,7 +239,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -266,7 +255,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 52.0
 spot_angle = 89.99
 
@@ -283,7 +271,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -300,7 +287,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 80.0
 
@@ -317,7 +303,6 @@ shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_opacity = 0.8
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 20.0
 spot_angle = 87.13365
 
@@ -335,7 +320,6 @@ shadow_normal_bias = 10.0
 shadow_reverse_cull_face = true
 shadow_transmittance_bias = -1.063
 shadow_blur = 0.51
-distance_fade_enabled = false
 spot_range = 707.9018
 spot_angle = 36.43528
 
@@ -858,13 +842,12 @@ transform = Transform3D(-0.004433065, 0, 0.99999017, 0, 1, 0, -0.99999017, 0, -0
 [node name="Milk" type="Node3D" parent="Products" unique_id=2077405616]
 script = ExtResource("26_hby33")
 
-[node name="Milk Warning" type="Label3D" parent="Products/Milk"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.2, 5.0, -29.2)
+[node name="Milk Warning" type="Label3D" parent="Products/Milk" unique_id=1388641778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.2, 5, -29.2)
 modulate = Color(1, 0.2, 0.1, 1)
-outline_modulate = Color(0, 0, 0, 1)
-outline_size = 18
-font_size = 56
 text = "warn: do not the milk is not plesent :("
+font_size = 56
+outline_size = 18
 
 [node name="Lite Milk" type="Node3D" parent="Products/Milk" unique_id=175395074]
 transform = Transform3D(1, 7.071321e-11, -1.1641532e-10, 4.5815796e-11, 1, 0, 0, 0, 1, 0, 0, 0)
